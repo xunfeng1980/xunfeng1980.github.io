@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "不用停止学习和记录"
+title:  "不要停止学习和记录"
 date:   2019-07-23 23:11:00 +0800
 categories: other
 ---
