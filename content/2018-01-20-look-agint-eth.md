@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "一年之后再看以太坊"
-date:   2018-01-20 10:44:18 +0800
+date:   2018-01-20 10:44:18
 categories: other
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "最近的一些思考"
-date:   2018-07-07 10:44:18 +0800
+date:   2018-07-07 10:44:18
 categories: other
 ---
 

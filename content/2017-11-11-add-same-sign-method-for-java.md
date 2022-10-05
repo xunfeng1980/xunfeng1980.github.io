@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "添加签名相同但返回值不同的方法"
-date:   2017-11-01 23:44:18 +0800
+date:   2017-11-01 23:44:18
 categories: java
 ---
 

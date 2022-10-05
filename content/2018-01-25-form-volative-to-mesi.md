@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "从 volatile 到 MESI 协议"
-date:   2018-01-25 10:44:18 +0800
+date:   2018-01-25 10:44:18
 categories: jdk
 ---
 

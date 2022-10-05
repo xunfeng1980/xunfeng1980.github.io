@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Docker Compose 的简单使用"
-date:   2018-01-01 23:44:18 +0800
+date:   2018-01-01 23:44:18
 categories: docker
 ---
 

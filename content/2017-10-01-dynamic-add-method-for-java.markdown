@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java 动态增加方法"
-date:   2017-10-01 23:44:18 +0800
+date:   2017-10-01 23:44:18
 categories: jdk
 ---
 

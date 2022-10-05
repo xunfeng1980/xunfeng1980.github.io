@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "记一次腾讯的面试"
-date:   2019-11-03 22:40:07 +0800
+date:   2019-11-03 22:40:07
 categories: other
 ---
 

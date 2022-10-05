@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "mac 环境构建 openjdk10"
-date:   2017-10-11 23:44:18 +0800
+date:   2017-10-11 23:44:18
 categories: jdk
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Junit 多策略测试切换"
-date:   2018-01-15 20:44:18 +0800
+date:   2018-01-15 20:44:18
 categories: java
 ---
 

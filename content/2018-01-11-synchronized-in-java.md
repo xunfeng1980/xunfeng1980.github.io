@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Java 并发之 synchronized 读书笔记"
-date:   2018-01-11 23:44:18 +0800
+date:   2018-01-11 23:44:18
 categories: java
 ---
 
