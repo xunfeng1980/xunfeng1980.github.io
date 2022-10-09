@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2"  type="font/woff2" crossorigin>
+
+
+<link rel="stylesheet" href="https://xunfeng1980.github.io/main.css">
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+
+	
+
+
+	
+
+<title>Java 并发之 synchronized 读书笔记 | Home</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://xunfeng1980.github.io/blog/synchronized-in-java/">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <meta name="twitter:image" content="https://xunfeng1980.github.io/doks.png">
+  
+  <meta name="twitter:title" content="Java 并发之 synchronized 读书笔记">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+  
+  <meta property="og:title" content="Java 并发之 synchronized 读书笔记">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://xunfeng1980.github.io/blog/synchronized-in-java/">
+
+  
+    <meta property="og:image" content="https://xunfeng1980.github.io/doks.png">
+  
+
+  <meta property="og:updated_time" content="">
+  <meta property="og:site_name" content="Java 并发之 synchronized 读书笔记">
+
+  
+
+  
+
+  
+  <meta property="article:publisher" content="https://www.facebook.com/">
+  <meta property="article:author" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          {
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "Home",
+            "item": "https://xunfeng1980.github.io/"
+          },
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  2 ,
+            "name": "Blog",
+            "item": "https://xunfeng1980.github.io/blog/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  3 ,
+            "name": "Synchronized In Java",
+            "item": "https://xunfeng1980.github.io/blog/synchronized-in-java/"
+          },
+        
+      
+    
+  }
+</script>
+
+
+
+
+
+
+  <meta name="theme-color" content="#fff">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://xunfeng1980.github.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://xunfeng1980.github.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://xunfeng1980.github.io/favicon-16x16.png">
+  
+
+
+  
+
+</head>
+
+  
+    
+  
+
+<body class="page single">
+  
+    
+<div class="header-bar fixed-top"></div>
+<header class="navbar fixed-top navbar-expand-md navbar-light">
+	<div class="container">
+		<input class="menu-btn order-0" type="checkbox" id="menu-btn">
+		<label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
+		<a class="navbar-brand order-1 order-md-0 me-auto" href="https://xunfeng1980.github.io">Home</a>
+		<button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+			<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+			<span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+		</button>
+		<ul class="navbar-nav fork-me order-3 order-md-5">
+			
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/xunfeng1980"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span></a>
+					</li>
+				
+			
+		</ul>
+		<div class="collapse navbar-collapse order-4 order-md-1">
+			<ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+				
+					
+				
+				
+				
+					
+						<li class="nav-item">
+							<a class="nav-link" href="https://xunfeng1980.github.io/blog/">Blog</a>
+						</li>
+					
+				
+			</ul>
+			<div class="break order-6 d-md-none"></div>
+			
+				<form class="navbar-form flex-grow-1 order-7 order-md-3">
+					<input id="userinput" class="form-control is-search" type="search" placeholder="Search docs..."
+						aria-label="Search docs..." autocomplete="off">
+					<div id="suggestions" class="shadow bg-white rounded"></div>
+				</form>
+			
+		</div>
+	</div>
+</header>
+
+  
+
+  
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xxl-8">
+        <article>
+          <div class="page-header">
+            <h1>Java 并发之 synchronized 读书笔记</h1>
+          </div>
+          
+          <p>synchronized是Java较为古老的同步实现方式，大家可能叫监视器锁，synchronized不需要显式加锁与解锁，当访问其修饰的方法或者同步块时，会自动获取锁，从生成的Java字节码来看，编译器在同步块开始的地方插入了MONITORENTER,在结束的地方插入MONITOREXIT，这可能也是监视器锁这个名字的由来。</p>
+<p>synchronized的锁存放在每个对象的对象头的MarkWord中，在1.6之后，又增加了偏向锁的支持，减少同一线程获取锁的性能损耗。synchronized的锁状态分为无锁,偏向锁,轻量级锁,重量级锁四种。</p>
+<p>MarkWord结构（64位 jvm）：</p>
+<p><img src="/Users/chenfeilong/Downloads/markword.png" alt="markword" /></p>
+<p>偏向锁在同一线程获取锁时，不需要加锁与解锁，只需要判断当前对象头是否有当前线程的偏向锁，有则获取锁，若无则去判断是否设置了偏向标识，有偏向标识，则CAS设置偏向锁，无则CAS竞争锁。</p>
+<p>偏向锁有一个撤销的过程，在一个线程获取到偏向锁之后，另外一个线程来竞争锁，会如下图所示，先暂停持有偏向锁的线程，检查线程是否活动（线程死了也暂停不了吧），如果还活动就开始升级为轻量级锁，否则重新偏向到新的线程。</p>
+<p><img src="/Users/chenfeilong/Downloads/%E5%81%8F%E5%90%91%E9%94%81%E7%9A%84%E6%92%A4%E9%94%80.png" alt="偏向锁的撤销" /></p>
+<p>轻量级锁在存在竞争的时候又会发生锁的膨胀，在轻量级锁竞争较激烈时，比如一个线程持有锁，另外一个线程在循环CAS（自旋）获取锁时，再来一个线程竞争锁，这里总不能一直自旋下去，因为比较消耗cpu，因此就升级为重量级锁。这时候竞争锁的行为就改变了，从自旋变成了阻塞。具体如下图：</p>
+<p><img src="/Users/chenfeilong/Downloads/%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%94%81.png" alt="轻量级锁" /></p>
+<p>最后锁只能升级，不能降级，因为在竞争激烈的情况下，自旋只会让cpu空转，啥事也没有做。</p>
+<p>总结：偏向锁解锁和加锁不需要额外的同步消耗，但是在存在竞争时会存在撤销和升级。（单纯一个线程访问需要同步吗？除非有这样一种情况，虽然也是多个线程，但是其中一个线程多次获取同一个对象的锁，这个时候，可能会有一些性能提升。另外有人还建议直接使用-XX:-UseBiasedLocking=false关闭偏向锁）</p>
+<p>轻量级锁用CAS，竞争时不会阻塞，但是循环CAS比较消耗CPU（基本上所有的锁（除了偏向锁），轻量级锁，重量级锁，以及互斥锁里面加锁解锁都是循环CAS，就不消耗CPU吗，其中比较合理的解释就是使用CAS是认为这个过程比较快就可以完成，如果比较慢的时候还是直接阻塞在那吧）</p>
+<p>重量级锁的优缺点和轻量级相对，没有什么好说的。</p>
+<p>参考文档：</p>
+<p>1.《深入理解Java虚拟机》</p>
+<p>2.《Java并发编程的艺术》</p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    
+<footer class="footer text-muted">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 order-last order-lg-first">
+				<ul class="list-inline">
+					
+						<li class="list-inline-item">Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-lg-8 order-first order-lg-last text-lg-end">
+				<ul class="list-inline">
+					
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/privacy-policy/">Privacy</a></li>
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/docs/contributing/code-of-conduct/">Code of Conduct</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+  
+
+  
+<script type="text/javascript" src="https://xunfeng1980.github.io/js/main.js" defer></script>
+
+  <script type="text/javascript" src="https://xunfeng1980.github.io/plugins/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/js/search.js" defer></script>
+
+  
+</body>
+</html>

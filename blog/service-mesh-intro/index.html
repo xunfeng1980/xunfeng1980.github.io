@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2"  type="font/woff2" crossorigin>
+
+
+<link rel="stylesheet" href="https://xunfeng1980.github.io/main.css">
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+
+	
+
+
+	
+
+<title>Service Mesh | Home</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://xunfeng1980.github.io/blog/service-mesh-intro/">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <meta name="twitter:image" content="https://xunfeng1980.github.io/doks.png">
+  
+  <meta name="twitter:title" content="Service Mesh">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+  
+  <meta property="og:title" content="Service Mesh">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://xunfeng1980.github.io/blog/service-mesh-intro/">
+
+  
+    <meta property="og:image" content="https://xunfeng1980.github.io/doks.png">
+  
+
+  <meta property="og:updated_time" content="">
+  <meta property="og:site_name" content="Service Mesh">
+
+  
+
+  
+
+  
+  <meta property="article:publisher" content="https://www.facebook.com/">
+  <meta property="article:author" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          {
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "Home",
+            "item": "https://xunfeng1980.github.io/"
+          },
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  2 ,
+            "name": "Blog",
+            "item": "https://xunfeng1980.github.io/blog/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  3 ,
+            "name": "Service Mesh Intro",
+            "item": "https://xunfeng1980.github.io/blog/service-mesh-intro/"
+          },
+        
+      
+    
+  }
+</script>
+
+
+
+
+
+
+  <meta name="theme-color" content="#fff">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://xunfeng1980.github.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://xunfeng1980.github.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://xunfeng1980.github.io/favicon-16x16.png">
+  
+
+
+  
+
+</head>
+
+  
+    
+  
+
+<body class="page single">
+  
+    
+<div class="header-bar fixed-top"></div>
+<header class="navbar fixed-top navbar-expand-md navbar-light">
+	<div class="container">
+		<input class="menu-btn order-0" type="checkbox" id="menu-btn">
+		<label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
+		<a class="navbar-brand order-1 order-md-0 me-auto" href="https://xunfeng1980.github.io">Home</a>
+		<button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+			<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+			<span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+		</button>
+		<ul class="navbar-nav fork-me order-3 order-md-5">
+			
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/xunfeng1980"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span></a>
+					</li>
+				
+			
+		</ul>
+		<div class="collapse navbar-collapse order-4 order-md-1">
+			<ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+				
+					
+				
+				
+				
+					
+						<li class="nav-item">
+							<a class="nav-link" href="https://xunfeng1980.github.io/blog/">Blog</a>
+						</li>
+					
+				
+			</ul>
+			<div class="break order-6 d-md-none"></div>
+			
+				<form class="navbar-form flex-grow-1 order-7 order-md-3">
+					<input id="userinput" class="form-control is-search" type="search" placeholder="Search docs..."
+						aria-label="Search docs..." autocomplete="off">
+					<div id="suggestions" class="shadow bg-white rounded"></div>
+				</form>
+			
+		</div>
+	</div>
+</header>
+
+  
+
+  
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xxl-8">
+        <article>
+          <div class="page-header">
+            <h1>Service Mesh</h1>
+          </div>
+          
+          <p>最近被 react 虐得不行，想来点清真的。正好前几个月参加<em>阿里 RocketMQ 深圳技术讲座</em>，接触到一个新词：云原生应用 ( Cloud Native Application )。而最近自己也在研究 Service Mesh，索性记录一下自己的进展。</p>
+<p>之前大家一直说微服务，首当其冲的微服务框架便是 Spring Cloud，之前一直用 Spring Boot，没有太多用  Spring Cloud，课程倒是看了不少。之所以没有用上它，一方面由于历史原因，大多数项目用的基本都是 Dubbo(Dubbox) RPC 框架。很多项目想尝试，后来又觉得改动太大，用 Spring Boot 已经是很不错的进步了。</p>
+<p>Spring Cloud功能上来说是很强大，至少比 Dubbo功能丰富，涵盖了服务发现，服务治理，熔断器，日志跟踪，负载均衡等，但是如果真的要使用，大家是不是还要考虑 REST 性能与 RPC 的比较，以及 Spring Config  的配置管理是否适用现有项目等各种实际问题，总感觉水土不服。</p>
+<p>Spring Cloud 和 Dubbo 都属于侵入型微服务框架，所以选型很重要，一旦用了就很难去改变。之前想把 Dubbo 改成 Spring Cloud ，后来发现那个代价不是一般高，服务还不能灰度上线。突然想起之前直接用 Protobuf+Netty 做推送，然后看了Dubbox 的代码，底层是 Netty+Kryo，其实和我们之前做的差不多。</p>
+<p>既然要说Service Mesh，铺垫也差不多了。Service mesh 译作 ”服务网格“，作为服务间通信的基础设施层。对比上述框架来说，是一种非侵入性框架或者基础架构。也就意味着微服务的那些东西就不用和业务代码凑在一起，业务不用再去关心该用什么去做服务发现，无论是自己用 zookeeper 实现一个简单服务发现，还是用 etcd 来实现，其实都是在增加业务代码的复杂度。Service Mesh就不再重蹈覆辙，上述能力被下放到基础架构中，就像一个操作系统天生就可以完成网络通讯一样。</p>
+<p>Service Mesh有以下特点：</p>
+<ol>
+<li>将服务发现，重试/超时,监控，追踪等下放到底层基础架构中。</li>
+<li>对应用程序透明，非侵入性</li>
+<li>作为应用间的透明网络代理</li>
+</ol>
+<p>目前比较流行的 Service Mesh 框架有 Istio 和 Linkerd，都可以和 K8S 进行集成。</p>
+<p>下面我们就来实践一下Istio。</p>
+<p>首先安装 k8s ，如果觉得比较麻烦就直接安装minikube（推荐），之后开始安装 istio，前方注意和谐上网。</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>curl -L https://git.io/getLatestIstio | sh -
+</span></code></pre>
+<p>然后添加到环境变量中</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>cd istio-0.x
+</span><span>export PATH=$PWD/bin:$PATH
+</span></code></pre>
+<p>前几天还是0.5,现在已经是0.6，更新还是比较迅速的。</p>
+<p>下面就增长开始安装:</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>~ kubectl apply -f install/kubernetes/istio.yaml
+</span></code></pre>
+<p>安装成功之后确认一下：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>~ kubectl get pods -n istio-system
+</span><span>
+</span><span>NAME                             READY     STATUS    RESTARTS   AGE
+</span><span>istio-ca-97bddb669-b7xrx         1/1       Running   4          11d
+</span><span>istio-ingress-777786fbcd-tvtdf   1/1       Running   8          11d
+</span><span>istio-mixer-c976b8854-m4nqg      3/3       Running   12         11d
+</span><span>istio-pilot-776bb8cb7f-7h95b     2/2       Running   8          11d
+</span></code></pre>
+<p>istio就安装成功了，下面来安装bookinfo官方示例。</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>~ kubectl apply -f &lt;(istioctl kube-inject -f samples/bookinfo/kube/bookinfo.yaml)
+</span></code></pre>
+<p>确认一下:</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>~ kubectl get pods
+</span><span>
+</span><span>NAME                             READY     STATUS    RESTARTS   AGE
+</span><span>details-v1-56cf65ddc7-vz4pr      2/2       Running   12         11d
+</span><span>productpage-v1-b64876bc7-gfp9p   2/2       Running   12         11d
+</span><span>ratings-v1-cccf67989-mjb95       2/2       Running   12         11d
+</span><span>reviews-v1-846fd9c945-8xmqg      2/2       Running   12         11d
+</span><span>reviews-v2-74f5547679-bj6zv      2/2       Running   12         11d
+</span><span>reviews-v3-8d889d8d5-lqc27       2/2       Running   12         11d
+</span></code></pre>
+<p>下面获取网关地址，这里不同的安装方式获取地址的方式是不一样的，这里只演示 minikube。</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>~  export GATEWAY_URL=$(kubectl get po -l istio=ingress -n istio-system -o &#39;jsonpath={.items[0].status.hostIP}&#39;):$(kubectl get svc istio-ingress -n istio-system -o &#39;jsonpath={.spec.ports[0].nodePort}&#39;)
+</span><span>
+</span><span>~ echo $GATEWAY_URL                                                                                                                                                             
+</span><span>192.168.99.100:32705
+</span></code></pre>
+<p>然后在浏览器中访问 http://192.168.99.100:32705/productpage 就可以看到 BookInfo 主界面。</p>
+<p>istio 有 Intelligent Route,下面也来体验一下：</p>
+<p>先查看一下路由信息</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span> ~ istioctl get routerules -o yaml                                                                                                                                        
+</span><span> No resources found.
+</span></code></pre>
+<p>导入 v1路由信息</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span> ~/Downloads/istio-0.5.0  istioctl create -f samples/bookinfo/kube/route-rule-all-v1.yaml                                                                                          
+</span><span>
+</span><span>Created config route-rule/default/productpage-default at revision 62564
+</span><span>Created config route-rule/default/reviews-default at revision 62565
+</span><span>Created config route-rule/default/ratings-default at revision 62566
+</span><span>Created config route-rule/default/details-default at revision 62567
+</span><span>
+</span><span> ~/Downloads/istio-0.5.0  istioctl get routerules -o yaml                                                                                                                          
+</span><span>
+</span><span>apiVersion: config.istio.io/v1alpha2
+</span><span>kind: RouteRule
+</span><span>metadata:
+</span><span>  creationTimestamp: null
+</span><span>  name: details-default
+</span><span>  namespace: default
+</span><span>  resourceVersion: &quot;62567&quot;
+</span><span>spec:
+</span><span>  destination:
+</span><span>    name: details
+</span><span>  precedence: 1
+</span><span>  route:
+</span><span>  - labels:
+</span><span>      version: v1
+</span><span>---
+</span><span>apiVersion: config.istio.io/v1alpha2
+</span><span>kind: RouteRule
+</span><span>metadata:
+</span><span>  creationTimestamp: null
+</span><span>  name: productpage-default
+</span><span>  namespace: default
+</span><span>  resourceVersion: &quot;62564&quot;
+</span><span>spec:
+</span><span>  destination:
+</span><span>    name: productpage
+</span><span>  precedence: 1
+</span><span>  route:
+</span><span>  - labels:
+</span><span>      version: v1
+</span><span>---
+</span><span>apiVersion: config.istio.io/v1alpha2
+</span><span>kind: RouteRule
+</span><span>metadata:
+</span><span>  creationTimestamp: null
+</span><span>  name: ratings-default
+</span><span>  namespace: default
+</span><span>  resourceVersion: &quot;62566&quot;
+</span><span>spec:
+</span><span>  destination:
+</span><span>    name: ratings
+</span><span>  precedence: 1
+</span><span>  route:
+</span><span>  - labels:
+</span><span>      version: v1
+</span><span>---
+</span><span>apiVersion: config.istio.io/v1alpha2
+</span><span>kind: RouteRule
+</span><span>metadata:
+</span><span>  creationTimestamp: null
+</span><span>  name: reviews-default
+</span><span>  namespace: default
+</span><span>  resourceVersion: &quot;62565&quot;
+</span><span>spec:
+</span><span>  destination:
+</span><span>    name: reviews
+</span><span>  precedence: 1
+</span><span>  route:
+</span><span>  - labels:
+</span><span>      version: v1
+</span><span>---
+</span></code></pre>
+<p>网页上显示为Book Reviews</p>
+<p>下面我们替换为 v2路由</p>
+<pre data-lang="Shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-Shell "><code class="language-Shell" data-lang="Shell"><span> ~/Downloads/istio-0.5.0  istioctl create -f samples/bookinfo/kube/route-rule-reviews-test-v2.yaml
+</span><span>
+</span><span>Created config route-rule/default/reviews-test-v2 at revision 62803
+</span><span> ~/Downloads/istio-0.5.0  istioctl get routerule reviews-test-v2 -o yaml 
+</span><span>
+</span><span>apiVersion: config.istio.io/v1alpha2
+</span><span>kind: RouteRule
+</span><span>metadata:
+</span><span>  creationTimestamp: null
+</span><span>  name: reviews-test-v2
+</span><span>  namespace: default
+</span><span>  resourceVersion: &quot;62803&quot;
+</span><span>spec:
+</span><span>  destination:
+</span><span>    name: reviews
+</span><span>  match:
+</span><span>    request:
+</span><span>      headers:
+</span><span>        cookie:
+</span><span>          regex: ^(.*?;)?(user=jason)(;.*)?$
+</span><span>  precedence: 2
+</span><span>  route:
+</span><span>  - labels:
+</span><span>      version: v2
+</span><span>---
+</span></code></pre>
+<p>然后登录jason账户，密码随意，发现比 v1多了五星评价功能，这不就是 ABTest吗，还是比较 6 的。</p>
+<p>其他功能就不再演示了，主要有下面这些，官网都有：</p>
+<ul>
+<li><a href="https://istio.io/docs/tasks/traffic-management/fault-injection.html">Fault Injection</a></li>
+<li><a href="https://istio.io/docs/tasks/traffic-management/traffic-shifting.html">Traffic Shifting</a></li>
+<li><a href="https://istio.io/docs/tasks/traffic-management/circuit-breaking.html">Circuit Breaking</a></li>
+<li><a href="https://istio.io/docs/tasks/traffic-management/mirroring.html">Mirroring</a></li>
+</ul>
+<p>之后打算用一下这个试一下，感觉还不错的样子，最后 友情提示一下官方推荐用 Google Kubernetes Engine，但是最好还是本地弄，反正我试了几次都是有问题的，可能是 RP 问题。</p>
+<h2 id="can-kao-wen-dang">参考文档</h2>
+<p>1.<a href="https://kubernetes.io/docs/getting-started-guides/minikube/">minikube 安装指南</a></p>
+<p>2.<a href="https://istio.io/docs/setup/kubernetes/quick-start.html">istio 安装指南</a></p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    
+<footer class="footer text-muted">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 order-last order-lg-first">
+				<ul class="list-inline">
+					
+						<li class="list-inline-item">Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-lg-8 order-first order-lg-last text-lg-end">
+				<ul class="list-inline">
+					
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/privacy-policy/">Privacy</a></li>
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/docs/contributing/code-of-conduct/">Code of Conduct</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+  
+
+  
+<script type="text/javascript" src="https://xunfeng1980.github.io/js/main.js" defer></script>
+
+  <script type="text/javascript" src="https://xunfeng1980.github.io/plugins/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/js/search.js" defer></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Home</title>
+	<link href="https://xunfeng1980.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://xunfeng1980.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-10-09T20:48:00+00:00</updated>
+	<id>https://xunfeng1980.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>瞎折腾</title>
+		<published>2022-10-09T20:48:00+00:00</published>
+		<updated>2022-10-09T20:48:00+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/xiazheteng101/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/xiazheteng101/</id>
+		<content type="html">&lt;p&gt;白忙活了一年，瞎折腾，后面需要聚焦，聚焦，聚焦。&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Hello Zola</title>
+		<published>2022-10-05T17:12:07+00:00</published>
+		<updated>2022-10-05T17:12:07+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/hello-zola/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/hello-zola/</id>
+		<content type="html">&lt;p&gt;国庆正好有些时间，对年久失修的博客进行整理，本来计划迁移到 hugo，后面发现 Rust 的 Zola 也不错，就用上了。&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;看了几本书，主要是 AutoML，主要内容还是 GA，贝叶斯，TPE 等，理解不深刻，还需要加强&lt;&#x2F;li&gt;
+&lt;li&gt;在深圳玩了一下，主要是爬山&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>记一次腾讯的面试</title>
+		<published>2019-11-03T22:40:07+00:00</published>
+		<updated>2019-11-03T22:40:07+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/tencent-interview/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/tencent-interview/</id>
+		<content type="html">&lt;h1 id=&quot;ji-yi-ci-teng-xun-de-mian-shi&quot;&gt;记一次腾讯的面试&lt;&#x2F;h1&gt;
+&lt;p&gt;面试总共 7 轮，最后觉得职级和薪资不是很满意，不过觉得这个过程还是挺有意思，当然也有一些收获。&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;mian-shi-kao-cha-dian&quot;&gt;面试考察点&lt;&#x2F;h1&gt;
+&lt;p&gt;主要还是对项目的理解之类的，技术面出了一个编程题，但是不是现在完成的。这种不是现场完成的题目其实再难都解决方案，
+毕竟现在是面对浏览器编程的时代（这是最好的时代，也是最坏的时代）。&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;shou-huo&quot;&gt;收获&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;对一些底层的技术还是理解不够深刻&lt;&#x2F;li&gt;
+&lt;li&gt;对自己未来的规划不是很明确&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h1 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;制定自己的年度计划和三年计划&lt;&#x2F;li&gt;
+&lt;li&gt;对自己欠缺的地方进行系统性学习&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>最近的一些思考</title>
+		<published>2018-07-07T10:44:18+00:00</published>
+		<updated>2018-07-07T10:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/some-think/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/some-think/</id>
+		<content type="html">&lt;h1 id=&quot;zui-jin-de-yi-xie-si-kao&quot;&gt;最近的一些思考&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;wei-fu-wu&quot;&gt;微服务&lt;&#x2F;h2&gt;
+&lt;p&gt;两年前，第一次真正接触微服务的概念，但也只是简单地进行了使用，当时技术栈主要是 Spring Boot（后文简称 SB ）,那是 Spring Cloud （后文简称 SC ） 也比较流行，但是由于各种原因，并没有转向这套（甚至自己用 zookeeper 实现了简单的服务发现），理论上来说，用了 SB 再转向 SC 应该是很正常的事情。当时也认为SC 各种理念很高级，实现上也不错，也有 Netflix 等之类的大公司背书，而且和 Spring 天然集成的，使用起来还是比较方便。当时可能觉得其他的 RPC 框架：如 Dubbo 和 SC 相当简直差了一个档次，而且微服务不用这个，简直真的是 SB 了。&lt;&#x2F;p&gt;
+&lt;p&gt;从第一家公司离职后，去了另外一家公司，发现一个很奇怪的特点，这家公司的技术比较保守，基本还是十年前或者五六年前的技术架构。记得之前看过一本书上说过，技术不与时俱进，那就相当于自取灭亡，特别是技术驱动型公司，如果一直停滞不前，那就相当于你拿几十年前的武器和别人战斗，那结果自然是必然的。为什么技术要与时俱进，不是因为有了新技术就要去使用它，而是因为新技术往往可以提高业务的运转效率，同时也可以降低成本。不过在这个公司待了两个月，还是觉得有可取的地方，第一点是对代码质量的追求，由于业务的体量和特殊性（大概是亿级），所以对代码有较高的要求；第二点是对微服务整体架构的深入，虽然这个系统没有上 SC,甚至 SB 都没有，还是很老的一个架构，但其中微服务的思想已经有了，比如服务的拆分，服务的水平扩展，基于 Dubbo 的一些服务发现和治理，整体来说已经算是不错了，但是也总在思考，感觉还是少了什么东西。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rong-qi-hua-he-ci-cd&quot;&gt;容器化和 CI&#x2F;CD&lt;&#x2F;h2&gt;
+&lt;p&gt;后来又到了一家比较年轻活跃的公司，接触到 Docker 的大规模使用以及 CI&#x2F;CD，也是在这里，形成了整个对微服务完整生命周期的理解。 Docker 其实流行也很久了， 但是真正线上使用的并没有那么多，最近随着 Kubernetes（ k8s ） 的流行，更多公司也开始关注起来。&lt;&#x2F;p&gt;
+&lt;p&gt;首先为什么服务要容器化，第一点是不再依赖与运行环境，只要有 Docker  就可以跑起来，无论你是什么发行版的 Linux 系统，还是 Windows，Mac。这有点像 JVM，屏蔽底层的细节，一次编写，到处运行，用在容器上就是一次构建，到处运行。第二点是容器化可以更好的进行持续集成，由于第一点的缘故，部署一个服务容器将非常快捷，这更加适合目前 devops 的理念。&lt;&#x2F;p&gt;
+&lt;p&gt;持续集成(Continuous Integration)简称 CI ,持续部署（Continuous Deployment)简称 CD,如果微服务不把 CI&#x2F;CD 放在首位，那必然整个流程就是不流畅的。有些公司还是手动本地构建包，然后 上传 到服务器上跑起来，进行这样的人肉运维，人肉上线，要么考虑一下，是不是整个 CI&#x2F;CD 有问题，或者根本就没有 CI&#x2F;CD 。其次  CI&#x2F;CD 流程要做到每次构建自动跑单元测试，集成测试，以及 API 测试，UI 测试等等，这些流程也没有自动化的话，也谈不上完整的 CI&#x2F;CD。如果没有经过这些流程把包直接上传到服务器，不出问题，那应该要烧柱香，拜拜佛。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;yun-yuan-sheng-ying-yong-he-fu-wu-wang-ge&quot;&gt;云原生应用和服务网格&lt;&#x2F;h2&gt;
+&lt;p&gt;云原生应用遵循 &lt;a href=&quot;https:&#x2F;&#x2F;12factor.net&#x2F;&quot;&gt;Twelve-Factor&lt;&#x2F;a&gt; ，云原生应用是为了解决传统应用发布升级流程缓慢、架构复杂，可维护性差而提出的的一个思想集合，集中了 微服务，devops，云等多种思想。&lt;&#x2F;p&gt;
+&lt;p&gt;云原生应用应用可以跑在任意一家云服务商上，也可以实现多家服务商同时使用，同时也支持公有云和私有云的混合部署，这只是它的一个特点，更多的特点还是集中在解决传统应用面临的问题，如灰度发布，不停机发布，A&#x2F;B Test, 快速回滚，服务治理等。&lt;&#x2F;p&gt;
+&lt;p&gt;服务网格（Service Mesh）是一个比较新的概念，但是核心思想并不新。SC  以框架的形式侵入到程序中来解决微服务的各种问题，理论上来说，应该是效率最高，最灵活的一种做法。但是侵入性太强，而且只能 Spring 这套，异构语言的系统玩不转。Service Mesh 从另外一个角度来解决这个问题，也就是 sidecar 和 proxy，这样虽然性能上有些损失，但是扩展性却是比较灵活的，将这些基础能力（服务发现，服务治理，熔断限流，监控等）下放到基础设施中，做到对应用程序透明，是一个不错的进步。写业务逻辑不需要再去和这些东西纠结，代码逻辑也变得十分明朗。同时这样也解决了异构语言系统的问题，无论什么语言，都是可以完美的工作在一起，简直是一个完美世界。但是但是但是 Service Mesh 由于还比较新，目前还不能进行生产环境使用，就拿目前最流行的 Istio 来说，目前只发布了 0.8 版本，还不能实际使用，估计 1.0 也不行，可能得 1.2 才推荐生产，所以现在就面临一个困境，Service Mesh 是一个好东西，但是我们却用不了，呜呼哀哉。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;spring-cloud-he-service-mesh&quot;&gt;Spring Cloud 和 Service Mesh&lt;&#x2F;h2&gt;
+&lt;p&gt;首先两者解决问题的方式不一样，SC 是直接的方式，SM 是委婉的方式，这可能会造就两者之后的命运。如果目前已经上了 SC 或者其他的，系统已经具有基础的服务治理能力，先不要考虑 Service Mesh ，要先去考虑容器化和 CI&#x2F;CD ；如果没有太多的历史负担，则是可以考虑。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+&lt;p&gt;技术发展太快，不能停滞不前，也不能盲目追风。当年的 SSH 也只剩下了 Spring，可是有人说 Spring 只能一个季节用，但是 Service Mesh 整年都可以用，好像很有道理。最后，路漫漫而修远兮，吾将上下而求索。&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>最近学到的 Git 技巧</title>
+		<published>2018-02-27T10:44:18+00:00</published>
+		<updated>2018-02-27T10:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/git-study/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/git-study/</id>
+		<content type="html">&lt;p&gt;##整理提交记录&lt;&#x2F;p&gt;
+&lt;p&gt;有时候完成一个功能或者修复一个问题需要多次提交，但是在向主发布分支发起 MR 时，太多次数的提交记录不美观，这个时候我们就需要整理提交记录。&lt;&#x2F;p&gt;
+&lt;p&gt;整理提交记录一般使用 rebase。在终端中输入 git rebase -i origin&#x2F;xxx,其中 xxx 代表你需要发起 MR 的分支（注：xxx一般为保护分支，-i代表rebase交互模式），&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;  1 pick 1204858 fix 123
+&lt;&#x2F;span&gt;&lt;span&gt;  2 pick 379415c fix 12
+&lt;&#x2F;span&gt;&lt;span&gt;  3 pick f7e189f 2233444
+&lt;&#x2F;span&gt;&lt;span&gt;  4 pick ab3aa25 bug 1
+&lt;&#x2F;span&gt;&lt;span&gt;  5 pick a8f5ee3 new function 1
+&lt;&#x2F;span&gt;&lt;span&gt;  6
+&lt;&#x2F;span&gt;&lt;span&gt;  7 # Rebase 2c6c58f..a8f5ee3 onto 2c6c58f (5 commands)
+&lt;&#x2F;span&gt;&lt;span&gt;  8 #
+&lt;&#x2F;span&gt;&lt;span&gt;  9 # Commands:
+&lt;&#x2F;span&gt;&lt;span&gt; 10 # p, pick = use commit
+&lt;&#x2F;span&gt;&lt;span&gt; 11 # r, reword = use commit, but edit the commit message
+&lt;&#x2F;span&gt;&lt;span&gt; 12 # e, edit = use commit, but stop for amending
+&lt;&#x2F;span&gt;&lt;span&gt; 13 # s, squash = use commit, but meld into previous commit
+&lt;&#x2F;span&gt;&lt;span&gt; 14 # f, fixup = like &amp;quot;squash&amp;quot;, but discard this commit&amp;#39;s log message
+&lt;&#x2F;span&gt;&lt;span&gt; 15 # x, exec = run command (the rest of the line) using shell
+&lt;&#x2F;span&gt;&lt;span&gt; 16 # d, drop = remove commit
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;我们需要将上述提交合并成一个大提交，并 MR 到发布分支。具体操作是将除第一个pick之外的 pick 修改为 s，&lt;&#x2F;p&gt;
+&lt;p&gt;s 代表squash，有整理，压缩的含义。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;  1 pick 1204858 fix 123
+&lt;&#x2F;span&gt;&lt;span&gt;  2 s 379415c fix 12
+&lt;&#x2F;span&gt;&lt;span&gt;  3 s f7e189f 2233444
+&lt;&#x2F;span&gt;&lt;span&gt;  4 s ab3aa25 bug 1
+&lt;&#x2F;span&gt;&lt;span&gt;  5 s a8f5ee3 new function 1
+&lt;&#x2F;span&gt;&lt;span&gt;  6
+&lt;&#x2F;span&gt;&lt;span&gt;  7 # Rebase 2c6c58f..a8f5ee3 onto 2c6c58f (5 commands)
+&lt;&#x2F;span&gt;&lt;span&gt;  8 #
+&lt;&#x2F;span&gt;&lt;span&gt;  9 # Commands:
+&lt;&#x2F;span&gt;&lt;span&gt; 10 # p, pick = use commit
+&lt;&#x2F;span&gt;&lt;span&gt; 11 # r, reword = use commit, but edit the commit message
+&lt;&#x2F;span&gt;&lt;span&gt; 12 # e, edit = use commit, but stop for amending
+&lt;&#x2F;span&gt;&lt;span&gt; 13 # s, squash = use commit, but meld into previous commit
+&lt;&#x2F;span&gt;&lt;span&gt; 14 # f, fixup = like &amp;quot;squash&amp;quot;, but discard this commit&amp;#39;s log message
+&lt;&#x2F;span&gt;&lt;span&gt; 15 # x, exec = run command (the rest of the line) using shell
+&lt;&#x2F;span&gt;&lt;span&gt; 16 # d, drop = remove commit
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;之后回到修改 commit 信息的窗口，这时修改提交信息，然后保存退出。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;  1 # This is a combination of 5 commits.
+&lt;&#x2F;span&gt;&lt;span&gt;  2 合并之后的大提交
+&lt;&#x2F;span&gt;&lt;span&gt;  3
+&lt;&#x2F;span&gt;&lt;span&gt;  4
+&lt;&#x2F;span&gt;&lt;span&gt;  5
+&lt;&#x2F;span&gt;&lt;span&gt;  6
+&lt;&#x2F;span&gt;&lt;span&gt;  7
+&lt;&#x2F;span&gt;&lt;span&gt;  8
+&lt;&#x2F;span&gt;&lt;span&gt;  9
+&lt;&#x2F;span&gt;&lt;span&gt; 10 # Please enter the commit message for your changes. Lines starting
+&lt;&#x2F;span&gt;&lt;span&gt; 11 # with &amp;#39;#&amp;#39; will be ignored, and an empty message aborts the commit.
+&lt;&#x2F;span&gt;&lt;span&gt; 12 #
+&lt;&#x2F;span&gt;&lt;span&gt; 13 # Date:      Wed Oct 25 10:51:28 2017 +0800
+&lt;&#x2F;span&gt;&lt;span&gt; 14 #
+&lt;&#x2F;span&gt;&lt;span&gt; 15 # interactive rebase in progress; onto 2c6c58f
+&lt;&#x2F;span&gt;&lt;span&gt; 16 # Last commands done (5 commands done):
+&lt;&#x2F;span&gt;&lt;span&gt; 17 #    squash ab3aa25 bug 1
+&lt;&#x2F;span&gt;&lt;span&gt; 18 #    squash a8f5ee3 new function 1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;最后我们使用 git log 看一下提交记录,由下面的 log 可知，我们的确合并了多次提交，这个时候就可以往发布分支提一个好看的 MR 了。但是有时候，假设上述的5次提交记录已经被提交到增加的远程分支，我们在本地 rebase 后，再 push 到远端就会发生冲突，我们就需要强制 push，在push 是加上测试 -f 便可以实现。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;commit 40bfba9817ab6748c62e55913a28400b7c07683b (HEAD -&amp;gt; dev)
+&lt;&#x2F;span&gt;&lt;span&gt;Author: lux &amp;lt;583282897@qq.com&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Date:   Wed Oct 25 10:51:28 2017 +0800
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    合并之后的大提交
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;commit 2c6c58fcc07617f4596b191a38fa6675ccf8ef00 (origin&#x2F;master, origin&#x2F;dev, origin&#x2F;HEAD)
+&lt;&#x2F;span&gt;&lt;span&gt;Author: lux &amp;lt;583282897@qq.com&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Date:   Sun Oct 8 17:51:24 2017 +0800
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    edit
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;commit 26990fe3ec645d7d49df6b283b7db212394d8838
+&lt;&#x2F;span&gt;&lt;span&gt;Author: lux &amp;lt;583282897@qq.com&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Date:   Wed Oct 4 17:35:11 2017 +0800
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    init
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;commit 8c96f35366309939b591fa4b87e9d062f22adcf7
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;rebase 能是一把功能强大的双刃剑，有兴趣的话可以对比一下 merge和 rebase 的区别。rebase在一定程度上有助于产生更加清晰的提交，但是要重写提交记录，因此rebase之后只好只强制 push 到自己的远端分支，然后通过 MR合并到发布分支。&lt;&#x2F;p&gt;
+&lt;p&gt;如果在 Idea 里面进行 rebase 操作就非常简单了，在 Version Control中的 Log 中选中你需要合并的最早的那条提交记录，然后右键就有一个Interactively Rebase from Here，然后点击它，会跳出一个菜单，也和上述一样，把第一个之后改成 s，确定，然后重写提交信息，确定就可以完成合并提交。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;jiang-dang-qian-de-mou-xie-ti-jiao-chou-qu-dao-ling-wai-fen-zhi-shang&quot;&gt;将当前的某些提交抽取到另外分支上&lt;&#x2F;h2&gt;
+&lt;p&gt;有时候有些提交已经提交到本地了，当后来本地有提交一些和之前提交无关的东西，但是你又想先把之前的提交推送到一个新的远端分支。&lt;&#x2F;p&gt;
+&lt;p&gt;比如有以下本地提交记录：&lt;&#x2F;p&gt;
+&lt;p&gt;1.修复 bug 不够多问题  40bfba9817ab6748c62e55913a28400b7c07683b&lt;&#x2F;p&gt;
+&lt;p&gt;2.修复 饭不好吃问题  1204858cf7c1cab54fc28f196033b21933bfe7a2&lt;&#x2F;p&gt;
+&lt;p&gt;3.修复天气比较冷问题 2c6c58fcc07617f4596b191a38fa6675ccf8ef00&lt;&#x2F;p&gt;
+&lt;p&gt;假如我们只需要上线2的功能，1还没有完全弄好。这时我们从远处发布分支 check out 出一个新分支&lt;&#x2F;p&gt;
+&lt;p&gt;，然后在新分支里面执行 git cherry-pick 1204858cf7c1cab54fc28f196033b21933bfe7a2,这个时候，这个2的提交就被放到新的分支，然后就可以在新分支提 MR 合并到发布分支了。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;shi-yong-git-tong-bu-xu-ni-ji-he-ben-di-dai-ma-xiu-gai&quot;&gt;使用 git 同步虚拟机和本地代码修改&lt;&#x2F;h3&gt;
+&lt;p&gt;有时候程序是跑在虚拟机或者服务器里面（一般是本地跑不了太多的东西），那本地的代码修改需要同步到虚拟机。&lt;&#x2F;p&gt;
+&lt;p&gt;现在的解决办法有以下几种&lt;&#x2F;p&gt;
+&lt;p&gt;1.在虚拟机和本地使用 nfs 或者其他网络文件系统来共享文件夹，这个就可以保证两边的同步。这个在很久之前用过，但是总感觉很麻烦。&lt;&#x2F;p&gt;
+&lt;p&gt;2.将本地修改推送到远端，然后虚拟机从远端 fetch，这个虽然也可以用，但是产生了远端提交记录，虽然是自己的分支，总感觉不合理，还要走服务器一趟。&lt;&#x2F;p&gt;
+&lt;p&gt;3.使用 git 的remote 功能，这样就直接往虚拟机推送代码，用起来也简单一些&lt;&#x2F;p&gt;
+&lt;p&gt;大致使用流程如下&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;添加本地项目新的跟踪远端：git remote add xnj  username@host: &#x2F;xxx&#x2F;xxx，username为虚拟机的用户名，host 为虚拟机 ip，&#x2F;xxx&#x2F;xxx为项目在虚拟机内的绝对路径（注L：这样配置在每次推送代码时，都需要输入虚拟机密码，可以在~&#x2F;.ssh&#x2F;config 中配置私钥访问，就可以不用输入密码）&lt;&#x2F;li&gt;
+&lt;li&gt;然后 push 代码:git push xnj xxx:yyy ,yyy 为你的分支名。但是在 push 时，如果虚拟机中的 yyy 已被 check out，那么 push 将会被拒绝，解决办法最简单就是先切换到其他，然后在 push，也可以 reset，还木有试过。&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;can-kao-wen-dang&quot;&gt;参考文档&lt;&#x2F;h2&gt;
+&lt;p&gt;1.&lt;a href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;book&#x2F;zh&quot;&gt;Git Book&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;2.&lt;a href=&quot;https:&#x2F;&#x2F;ihower.tw&#x2F;git&#x2F;&quot;&gt;ihower&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;3.老大的指导&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Service Mesh</title>
+		<published>2018-02-25T10:44:18+00:00</published>
+		<updated>2018-02-25T10:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/service-mesh-intro/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/service-mesh-intro/</id>
+		<content type="html">&lt;p&gt;最近被 react 虐得不行，想来点清真的。正好前几个月参加&lt;em&gt;阿里 RocketMQ 深圳技术讲座&lt;&#x2F;em&gt;，接触到一个新词：云原生应用 ( Cloud Native Application )。而最近自己也在研究 Service Mesh，索性记录一下自己的进展。&lt;&#x2F;p&gt;
+&lt;p&gt;之前大家一直说微服务，首当其冲的微服务框架便是 Spring Cloud，之前一直用 Spring Boot，没有太多用  Spring Cloud，课程倒是看了不少。之所以没有用上它，一方面由于历史原因，大多数项目用的基本都是 Dubbo(Dubbox) RPC 框架。很多项目想尝试，后来又觉得改动太大，用 Spring Boot 已经是很不错的进步了。&lt;&#x2F;p&gt;
+&lt;p&gt;Spring Cloud功能上来说是很强大，至少比 Dubbo功能丰富，涵盖了服务发现，服务治理，熔断器，日志跟踪，负载均衡等，但是如果真的要使用，大家是不是还要考虑 REST 性能与 RPC 的比较，以及 Spring Config  的配置管理是否适用现有项目等各种实际问题，总感觉水土不服。&lt;&#x2F;p&gt;
+&lt;p&gt;Spring Cloud 和 Dubbo 都属于侵入型微服务框架，所以选型很重要，一旦用了就很难去改变。之前想把 Dubbo 改成 Spring Cloud ，后来发现那个代价不是一般高，服务还不能灰度上线。突然想起之前直接用 Protobuf+Netty 做推送，然后看了Dubbox 的代码，底层是 Netty+Kryo，其实和我们之前做的差不多。&lt;&#x2F;p&gt;
+&lt;p&gt;既然要说Service Mesh，铺垫也差不多了。Service mesh 译作 ”服务网格“，作为服务间通信的基础设施层。对比上述框架来说，是一种非侵入性框架或者基础架构。也就意味着微服务的那些东西就不用和业务代码凑在一起，业务不用再去关心该用什么去做服务发现，无论是自己用 zookeeper 实现一个简单服务发现，还是用 etcd 来实现，其实都是在增加业务代码的复杂度。Service Mesh就不再重蹈覆辙，上述能力被下放到基础架构中，就像一个操作系统天生就可以完成网络通讯一样。&lt;&#x2F;p&gt;
+&lt;p&gt;Service Mesh有以下特点：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;将服务发现，重试&#x2F;超时,监控，追踪等下放到底层基础架构中。&lt;&#x2F;li&gt;
+&lt;li&gt;对应用程序透明，非侵入性&lt;&#x2F;li&gt;
+&lt;li&gt;作为应用间的透明网络代理&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;目前比较流行的 Service Mesh 框架有 Istio 和 Linkerd，都可以和 K8S 进行集成。&lt;&#x2F;p&gt;
+&lt;p&gt;下面我们就来实践一下Istio。&lt;&#x2F;p&gt;
+&lt;p&gt;首先安装 k8s ，如果觉得比较麻烦就直接安装minikube（推荐），之后开始安装 istio，前方注意和谐上网。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;curl -L https:&#x2F;&#x2F;git.io&#x2F;getLatestIstio | sh -
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;然后添加到环境变量中&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;cd istio-0.x
+&lt;&#x2F;span&gt;&lt;span&gt;export PATH=$PWD&#x2F;bin:$PATH
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;前几天还是0.5,现在已经是0.6，更新还是比较迅速的。&lt;&#x2F;p&gt;
+&lt;p&gt;下面就增长开始安装:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;~ kubectl apply -f install&#x2F;kubernetes&#x2F;istio.yaml
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;安装成功之后确认一下：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;~ kubectl get pods -n istio-system
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;NAME                             READY     STATUS    RESTARTS   AGE
+&lt;&#x2F;span&gt;&lt;span&gt;istio-ca-97bddb669-b7xrx         1&#x2F;1       Running   4          11d
+&lt;&#x2F;span&gt;&lt;span&gt;istio-ingress-777786fbcd-tvtdf   1&#x2F;1       Running   8          11d
+&lt;&#x2F;span&gt;&lt;span&gt;istio-mixer-c976b8854-m4nqg      3&#x2F;3       Running   12         11d
+&lt;&#x2F;span&gt;&lt;span&gt;istio-pilot-776bb8cb7f-7h95b     2&#x2F;2       Running   8          11d
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;istio就安装成功了，下面来安装bookinfo官方示例。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;~ kubectl apply -f &amp;lt;(istioctl kube-inject -f samples&#x2F;bookinfo&#x2F;kube&#x2F;bookinfo.yaml)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;确认一下:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;~ kubectl get pods
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;NAME                             READY     STATUS    RESTARTS   AGE
+&lt;&#x2F;span&gt;&lt;span&gt;details-v1-56cf65ddc7-vz4pr      2&#x2F;2       Running   12         11d
+&lt;&#x2F;span&gt;&lt;span&gt;productpage-v1-b64876bc7-gfp9p   2&#x2F;2       Running   12         11d
+&lt;&#x2F;span&gt;&lt;span&gt;ratings-v1-cccf67989-mjb95       2&#x2F;2       Running   12         11d
+&lt;&#x2F;span&gt;&lt;span&gt;reviews-v1-846fd9c945-8xmqg      2&#x2F;2       Running   12         11d
+&lt;&#x2F;span&gt;&lt;span&gt;reviews-v2-74f5547679-bj6zv      2&#x2F;2       Running   12         11d
+&lt;&#x2F;span&gt;&lt;span&gt;reviews-v3-8d889d8d5-lqc27       2&#x2F;2       Running   12         11d
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;下面获取网关地址，这里不同的安装方式获取地址的方式是不一样的，这里只演示 minikube。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;~  export GATEWAY_URL=$(kubectl get po -l istio=ingress -n istio-system -o &amp;#39;jsonpath={.items[0].status.hostIP}&amp;#39;):$(kubectl get svc istio-ingress -n istio-system -o &amp;#39;jsonpath={.spec.ports[0].nodePort}&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;~ echo $GATEWAY_URL                                                                                                                                                             
+&lt;&#x2F;span&gt;&lt;span&gt;192.168.99.100:32705
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;然后在浏览器中访问 http:&#x2F;&#x2F;192.168.99.100:32705&#x2F;productpage 就可以看到 BookInfo 主界面。&lt;&#x2F;p&gt;
+&lt;p&gt;istio 有 Intelligent Route,下面也来体验一下：&lt;&#x2F;p&gt;
+&lt;p&gt;先查看一下路由信息&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt; ~ istioctl get routerules -o yaml                                                                                                                                        
+&lt;&#x2F;span&gt;&lt;span&gt; No resources found.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;导入 v1路由信息&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt; ~&#x2F;Downloads&#x2F;istio-0.5.0  istioctl create -f samples&#x2F;bookinfo&#x2F;kube&#x2F;route-rule-all-v1.yaml                                                                                          
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Created config route-rule&#x2F;default&#x2F;productpage-default at revision 62564
+&lt;&#x2F;span&gt;&lt;span&gt;Created config route-rule&#x2F;default&#x2F;reviews-default at revision 62565
+&lt;&#x2F;span&gt;&lt;span&gt;Created config route-rule&#x2F;default&#x2F;ratings-default at revision 62566
+&lt;&#x2F;span&gt;&lt;span&gt;Created config route-rule&#x2F;default&#x2F;details-default at revision 62567
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; ~&#x2F;Downloads&#x2F;istio-0.5.0  istioctl get routerules -o yaml                                                                                                                          
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;apiVersion: config.istio.io&#x2F;v1alpha2
+&lt;&#x2F;span&gt;&lt;span&gt;kind: RouteRule
+&lt;&#x2F;span&gt;&lt;span&gt;metadata:
+&lt;&#x2F;span&gt;&lt;span&gt;  creationTimestamp: null
+&lt;&#x2F;span&gt;&lt;span&gt;  name: details-default
+&lt;&#x2F;span&gt;&lt;span&gt;  namespace: default
+&lt;&#x2F;span&gt;&lt;span&gt;  resourceVersion: &amp;quot;62567&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;spec:
+&lt;&#x2F;span&gt;&lt;span&gt;  destination:
+&lt;&#x2F;span&gt;&lt;span&gt;    name: details
+&lt;&#x2F;span&gt;&lt;span&gt;  precedence: 1
+&lt;&#x2F;span&gt;&lt;span&gt;  route:
+&lt;&#x2F;span&gt;&lt;span&gt;  - labels:
+&lt;&#x2F;span&gt;&lt;span&gt;      version: v1
+&lt;&#x2F;span&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;span&gt;apiVersion: config.istio.io&#x2F;v1alpha2
+&lt;&#x2F;span&gt;&lt;span&gt;kind: RouteRule
+&lt;&#x2F;span&gt;&lt;span&gt;metadata:
+&lt;&#x2F;span&gt;&lt;span&gt;  creationTimestamp: null
+&lt;&#x2F;span&gt;&lt;span&gt;  name: productpage-default
+&lt;&#x2F;span&gt;&lt;span&gt;  namespace: default
+&lt;&#x2F;span&gt;&lt;span&gt;  resourceVersion: &amp;quot;62564&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;spec:
+&lt;&#x2F;span&gt;&lt;span&gt;  destination:
+&lt;&#x2F;span&gt;&lt;span&gt;    name: productpage
+&lt;&#x2F;span&gt;&lt;span&gt;  precedence: 1
+&lt;&#x2F;span&gt;&lt;span&gt;  route:
+&lt;&#x2F;span&gt;&lt;span&gt;  - labels:
+&lt;&#x2F;span&gt;&lt;span&gt;      version: v1
+&lt;&#x2F;span&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;span&gt;apiVersion: config.istio.io&#x2F;v1alpha2
+&lt;&#x2F;span&gt;&lt;span&gt;kind: RouteRule
+&lt;&#x2F;span&gt;&lt;span&gt;metadata:
+&lt;&#x2F;span&gt;&lt;span&gt;  creationTimestamp: null
+&lt;&#x2F;span&gt;&lt;span&gt;  name: ratings-default
+&lt;&#x2F;span&gt;&lt;span&gt;  namespace: default
+&lt;&#x2F;span&gt;&lt;span&gt;  resourceVersion: &amp;quot;62566&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;spec:
+&lt;&#x2F;span&gt;&lt;span&gt;  destination:
+&lt;&#x2F;span&gt;&lt;span&gt;    name: ratings
+&lt;&#x2F;span&gt;&lt;span&gt;  precedence: 1
+&lt;&#x2F;span&gt;&lt;span&gt;  route:
+&lt;&#x2F;span&gt;&lt;span&gt;  - labels:
+&lt;&#x2F;span&gt;&lt;span&gt;      version: v1
+&lt;&#x2F;span&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;span&gt;apiVersion: config.istio.io&#x2F;v1alpha2
+&lt;&#x2F;span&gt;&lt;span&gt;kind: RouteRule
+&lt;&#x2F;span&gt;&lt;span&gt;metadata:
+&lt;&#x2F;span&gt;&lt;span&gt;  creationTimestamp: null
+&lt;&#x2F;span&gt;&lt;span&gt;  name: reviews-default
+&lt;&#x2F;span&gt;&lt;span&gt;  namespace: default
+&lt;&#x2F;span&gt;&lt;span&gt;  resourceVersion: &amp;quot;62565&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;spec:
+&lt;&#x2F;span&gt;&lt;span&gt;  destination:
+&lt;&#x2F;span&gt;&lt;span&gt;    name: reviews
+&lt;&#x2F;span&gt;&lt;span&gt;  precedence: 1
+&lt;&#x2F;span&gt;&lt;span&gt;  route:
+&lt;&#x2F;span&gt;&lt;span&gt;  - labels:
+&lt;&#x2F;span&gt;&lt;span&gt;      version: v1
+&lt;&#x2F;span&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;网页上显示为Book Reviews&lt;&#x2F;p&gt;
+&lt;p&gt;下面我们替换为 v2路由&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Shell &quot;&gt;&lt;code class=&quot;language-Shell&quot; data-lang=&quot;Shell&quot;&gt;&lt;span&gt; ~&#x2F;Downloads&#x2F;istio-0.5.0  istioctl create -f samples&#x2F;bookinfo&#x2F;kube&#x2F;route-rule-reviews-test-v2.yaml
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Created config route-rule&#x2F;default&#x2F;reviews-test-v2 at revision 62803
+&lt;&#x2F;span&gt;&lt;span&gt; ~&#x2F;Downloads&#x2F;istio-0.5.0  istioctl get routerule reviews-test-v2 -o yaml 
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;apiVersion: config.istio.io&#x2F;v1alpha2
+&lt;&#x2F;span&gt;&lt;span&gt;kind: RouteRule
+&lt;&#x2F;span&gt;&lt;span&gt;metadata:
+&lt;&#x2F;span&gt;&lt;span&gt;  creationTimestamp: null
+&lt;&#x2F;span&gt;&lt;span&gt;  name: reviews-test-v2
+&lt;&#x2F;span&gt;&lt;span&gt;  namespace: default
+&lt;&#x2F;span&gt;&lt;span&gt;  resourceVersion: &amp;quot;62803&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;spec:
+&lt;&#x2F;span&gt;&lt;span&gt;  destination:
+&lt;&#x2F;span&gt;&lt;span&gt;    name: reviews
+&lt;&#x2F;span&gt;&lt;span&gt;  match:
+&lt;&#x2F;span&gt;&lt;span&gt;    request:
+&lt;&#x2F;span&gt;&lt;span&gt;      headers:
+&lt;&#x2F;span&gt;&lt;span&gt;        cookie:
+&lt;&#x2F;span&gt;&lt;span&gt;          regex: ^(.*?;)?(user=jason)(;.*)?$
+&lt;&#x2F;span&gt;&lt;span&gt;  precedence: 2
+&lt;&#x2F;span&gt;&lt;span&gt;  route:
+&lt;&#x2F;span&gt;&lt;span&gt;  - labels:
+&lt;&#x2F;span&gt;&lt;span&gt;      version: v2
+&lt;&#x2F;span&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;然后登录jason账户，密码随意，发现比 v1多了五星评价功能，这不就是 ABTest吗，还是比较 6 的。&lt;&#x2F;p&gt;
+&lt;p&gt;其他功能就不再演示了，主要有下面这些，官网都有：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;istio.io&#x2F;docs&#x2F;tasks&#x2F;traffic-management&#x2F;fault-injection.html&quot;&gt;Fault Injection&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;istio.io&#x2F;docs&#x2F;tasks&#x2F;traffic-management&#x2F;traffic-shifting.html&quot;&gt;Traffic Shifting&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;istio.io&#x2F;docs&#x2F;tasks&#x2F;traffic-management&#x2F;circuit-breaking.html&quot;&gt;Circuit Breaking&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;istio.io&#x2F;docs&#x2F;tasks&#x2F;traffic-management&#x2F;mirroring.html&quot;&gt;Mirroring&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;之后打算用一下这个试一下，感觉还不错的样子，最后 友情提示一下官方推荐用 Google Kubernetes Engine，但是最好还是本地弄，反正我试了几次都是有问题的，可能是 RP 问题。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;can-kao-wen-dang&quot;&gt;参考文档&lt;&#x2F;h2&gt;
+&lt;p&gt;1.&lt;a href=&quot;https:&#x2F;&#x2F;kubernetes.io&#x2F;docs&#x2F;getting-started-guides&#x2F;minikube&#x2F;&quot;&gt;minikube 安装指南&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;2.&lt;a href=&quot;https:&#x2F;&#x2F;istio.io&#x2F;docs&#x2F;setup&#x2F;kubernetes&#x2F;quick-start.html&quot;&gt;istio 安装指南&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>从 volatile 到 MESI 协议</title>
+		<published>2018-01-25T10:44:18+00:00</published>
+		<updated>2018-01-25T10:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/form-volative-to-mesi/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/form-volative-to-mesi/</id>
+		<content type="html">&lt;p&gt;##volatile介绍&lt;&#x2F;p&gt;
+&lt;p&gt;​	volatile英文含义为易变的，作为Java的一个最重要的关键字，没有之一，有人会说最重要的关键字是class，233。基本上需要线程安全的地方都会有它的出现。如比较常见的AQS(AbstractQueuedSynchronizer)中的state就被声明为volatile。&lt;&#x2F;p&gt;
+&lt;p&gt;​	Java语言规范（Java8）的定义：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;volatile Fields:  A field may be declared volatile, in which case the Java Memory Model ensures&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;that all threads see a consistent value for the variable .&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;​	大概意思就是说，Java内存模型可以保证共享变量（volatile）的多线程可见性，如果一个线程修改了共享变量，其他线程能够读取到修改值。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;volatilede-shi-xian&quot;&gt;volatile的实现&lt;&#x2F;h2&gt;
+&lt;p&gt;​	在对volatile锁修饰变量进行写入时，Jvm模板解释器除了生成正常的汇编指令外，还会额外生成一个lock指令。lock会将当前cpu的缓存行数据回写到系统内存，此外还会使得其他cpu的该数据地址无效，其实就是MESI控制协议所起的作用，这个协议可以保证所有处理器和内存中存储的数据是一致的。&lt;&#x2F;p&gt;
+&lt;p&gt;​	&lt;em&gt;MESI（Modified Exclusive Shared Or Invalid) CPU缓存一致性协议&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;2017.10.08 看了Inter cpu开发手册，发现说得不清楚，先不写。&lt;&#x2F;p&gt;
+&lt;p&gt;2018.1.02 调试了jvm10的模板解释器，生成的东西太多，未搞懂。&lt;&#x2F;p&gt;
+&lt;p&gt;2018.1.08 找到了一份国外MESIF文档，居然说的是i7处理器，读之，卒。&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>一年之后再看以太坊</title>
+		<published>2018-01-20T10:44:18+00:00</published>
+		<updated>2018-01-20T10:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/look-agint-eth/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/look-agint-eth/</id>
+		<content type="html">&lt;p&gt;​	一年之前朋友约我一起弄ETC&#x2F;ETH，就研究了一下以太坊和它的智能合约，以及史上最逆天的区块链众筹项目The DAO。&lt;&#x2F;p&gt;
+&lt;p&gt;​	大家可能认为这些基于区块链的虚拟货币非常安全，其实并不是这样。至少在2016年6月，由于The DAO智能合约存在问题，导致被盗走360w ETC，当时市值约5千万美元，如果是现在价格（1118美元,最高时超过了2000美元）的市值约40亿美元。后来得事情就更加奇怪了，The DAO没有继续下去，为了换回损失，以太坊核心团队使用了分叉技术以及更新以太坊代码，将ETC分出了新叉，也就是现在很流行的ETH。这次付出的代价就是完全违反区域链得可篡改数据、去中心化两大根本原则。最后还是这样做了，毕竟少数服从多数，大家为了利益违反原则。最后还出现了一些有趣的插曲，比如某矿池利用ETC和ETH进行双花攻击（由于分叉，导致ETC和ETH被同时使用）等。&lt;&#x2F;p&gt;
+&lt;p&gt;​	The DAO的大戏结束了，我那时觉得以太坊不是我心目中能够掌控未来的虚拟货币，智能合约又说得神乎其神，我自己也在本地尝试了一下，没有太多得惊喜，可能是由于没有太深入。&lt;&#x2F;p&gt;
+&lt;p&gt;​	一年之后，ETH大涨，ETC日渐式微，这也是以太坊想要的结果，也算皆大欢喜吧。对于区块链，我目前觉得还是要用到实际应用中，而不是只是用POS（工作量证明）来浪费资源，当然现在也有很多POW（股权证明）,这个就不予置评。大家都说POW比POS好，可是也都是在浪费资源（电费很贵，设备成本很高）。&lt;&#x2F;p&gt;
+&lt;p&gt;​	最近入了一些BTS，就放在那，也不多。说起BTS就得说一下EOS。之前《得到》App上有一个李笑来的课程，名字我懒得说了，大家可以搜一下，名字有些搞笑。我买了吴军大神的《硅谷来信》，听了一半，因为EOS的事情，直接就把App卸载了，自此再也不上这个平台。只能说，都会吹，前几年，大家都说，站在互联网的风口上，猪都能飞起来，现在说的是，站在区块链的风口上，泰坦尼克号都被吹的起来。用的是什么吹，一张嘴和PPT，有的连PPT都懒得写，话说秘书去哪里了？&lt;&#x2F;p&gt;
+&lt;p&gt;​	今天又试了一下ETH挖矿，星火矿池100M得算了，一天70多块钱。我把我的GTX1030跑了一个小时，发现算力只有20M，那意味着一天最多十几块钱，还要交电费，24小时大概30多块钱，还有显卡这么烫，舍不得啊，还是赶紧关了。&lt;&#x2F;p&gt;
+&lt;p&gt;​	大概就是这样，最近一直忙，也没有怎么写。&lt;&#x2F;p&gt;
+&lt;p&gt;参考目录：&lt;&#x2F;p&gt;
+&lt;p&gt;1.&lt;a href=&quot;http:&#x2F;&#x2F;ethfans.org&#x2F;henry&#x2F;articles&#x2F;92&quot;&gt;The Dao,道or悼&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;2.&lt;a href=&quot;http:&#x2F;&#x2F;ethfans.org&#x2F;henry&#x2F;articles&#x2F;119&quot;&gt;The Dao,DAO可盗，非常道&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;3.&lt;a href=&quot;http:&#x2F;&#x2F;ethfans.org&#x2F;&quot;&gt;以太坊中文社区&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;4.&lt;a href=&quot;http:&#x2F;&#x2F;wangxiaoming.com&#x2F;blog&#x2F;archives&#x2F;&quot;&gt;以太坊智能合约以及其他相关&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Junit 多策略测试切换</title>
+		<published>2018-01-15T20:44:18+00:00</published>
+		<updated>2018-01-15T20:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/catagory-in-junit/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/catagory-in-junit/</id>
+		<content type="html">&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;&#x2F;h2&gt;
+&lt;p&gt;最近在弄单元测试，之前基础版本的测试基本都是写好的，但是缺少高级版本的测试，又不想把代码copy一份，要就地实现基础版和高级版的测试复用，并且需要从配置读取测试策略来指定当前测试策略。因为基础版和高级版只是大部分功能差不多，因此还要做到通过注解的方式来限定当前测试方法或测试类是否运行于当前测试策略。下面废话少说，Let&#x27;s Go!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;shi-jian&quot;&gt;实践&lt;&#x2F;h2&gt;
+&lt;p&gt;之前也没有好好深入junit，仔细想了一下，我们要做到以下两点：&lt;&#x2F;p&gt;
+&lt;p&gt;1.需要做到通过注解限定当前测试类或测试方法是否执行。这个使用Category注解可以实现，但是Category的作用太过于简单，仅仅只能做到限定测试是否执行。&lt;&#x2F;p&gt;
+&lt;p&gt;2.需要做到针对同一测试方法在不同测试策略下可以有不相同的处理，其中可能请求地址不一样，返回结果以及断言处理不一样等。这个之前最初考虑的时候太过于复杂，当时想实现自定义注解，然后通过aop拦截去改写请求参数和处理流程。这样做太过于复杂，而且不同测试策略不会同时运行。最后的做法就是将测试流程提取到接口，各自的测试策略自己去实现，然后在初始化时，根据当前测试策略去绑定对应的实例，测试使用时直接使用接口就可以实现多策略测试的切换，再结合第一点基本上就可以满足需求了。&lt;&#x2F;p&gt;
+&lt;p&gt;主要代码如下：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;java&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-java &quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;package &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.category.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BasicCategory&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.category.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SeniorCategory&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.helper.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BaseUserHelper&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.junit.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Test&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.junit.experimental.categories.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Category&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.junit.runner.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;RunWith&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.springframework.beans.factory.annotation.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Autowired&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.springframework.boot.test.context.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SpringBootTest&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.springframework.test.context.junit4.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SpringRunner&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;RunWith&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SpringRunner&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;SpringBootTest
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;JunitApplicationTests &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Autowired
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;private &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BaseUserHelper &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;userHelper;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Test
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;contextLoads&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Test
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Category&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;({&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BasicCategory&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SeniorCategory&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;})
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;getUserTest&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;System&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.out.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;println&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(userHelper.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getUser&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;());
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Test
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Category&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SeniorCategory&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;getSeniorUserTest&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;System&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.out.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;println&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(userHelper.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getUser&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;());
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;Java&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-Java &quot;&gt;&lt;code class=&quot;language-Java&quot; data-lang=&quot;Java&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;package &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.configure;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.category.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BasicCategory&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.helper.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BaseUserHelper&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.helper.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;BasicUserHelper&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;com.lux.junit.helper.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;SeniorUserHelper&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.springframework.beans.factory.annotation.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Value&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.springframework.context.annotation.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Bean&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;org.springframework.context.annotation.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Configuration&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;**
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * Created with IntelliJ IDEA.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * User: chenfeilong
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * Date: 2018&#x2F;1&#x2F;28
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * Time: 23:30
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * Description:
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;@Configuration
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;public class CategoryConfigure {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;    @Value(&amp;quot;${test.category}&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;    String currentCategory;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;    @Bean(&amp;quot;userHelper&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;    public BaseUserHelper userHelper() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;        if (BasicCategory.class.getName().equals(currentCategory)) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;            return new BasicUserHelper();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;        } else {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;            return new SeniorUserHelper();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;        }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;zui-hou&quot;&gt;最后&lt;&#x2F;h2&gt;
+&lt;p&gt;Category需要传递includeCategories参数，其实它可以是多个策略。通常使用命令行传入或使用gradle传入。但是我们需要从配置文件读入，需要像下面这样做。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;groovy&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-groovy &quot;&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;&lt;span&gt;test {
+&lt;&#x2F;span&gt;&lt;span&gt;    useJUnit {
+&lt;&#x2F;span&gt;&lt;span&gt;        includeCategories getCategory()
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;String &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;getCategory&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def&lt;&#x2F;span&gt;&lt;span&gt; category = doGetCategory()
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;println&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;current catagory: &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; + category)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; category
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;String &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;doGetCategory&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def&lt;&#x2F;span&gt;&lt;span&gt; propertiesFilePath = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;src&#x2F;main&#x2F;resources&#x2F;application.properties&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def&lt;&#x2F;span&gt;&lt;span&gt; defaultCategory = &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;com.lux.junit.category.BasicCategory&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;File&lt;&#x2F;span&gt;&lt;span&gt; propFile = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;new File&lt;&#x2F;span&gt;&lt;span&gt;(propertiesFilePath)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; (propFile.canRead()) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;Properties&lt;&#x2F;span&gt;&lt;span&gt; props = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;new Properties&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;        props.load(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;new FileInputStream&lt;&#x2F;span&gt;&lt;span&gt;(propFile))
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; props.getProperty(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;test.category&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;println&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;can&amp;#39;t find catagory config,use default catagory &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; + defaultCategory)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; defaultCategory
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;测试结果&lt;&#x2F;p&gt;
+&lt;p&gt;BasicCategory:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;can-kao-mu-lu&quot;&gt;参考目录&lt;&#x2F;h2&gt;
+&lt;p&gt;1.&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;junit-team&#x2F;junit4&#x2F;wiki&#x2F;Categories&quot;&gt;junit wiki&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;2.&lt;a href=&quot;https:&#x2F;&#x2F;git.coding.net&#x2F;uleaf&#x2F;junit.git&quot;&gt;完整代码&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Java 并发之 synchronized 读书笔记</title>
+		<published>2018-01-11T23:44:18+00:00</published>
+		<updated>2018-01-11T23:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/synchronized-in-java/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/synchronized-in-java/</id>
+		<content type="html">&lt;p&gt;synchronized是Java较为古老的同步实现方式，大家可能叫监视器锁，synchronized不需要显式加锁与解锁，当访问其修饰的方法或者同步块时，会自动获取锁，从生成的Java字节码来看，编译器在同步块开始的地方插入了MONITORENTER,在结束的地方插入MONITOREXIT，这可能也是监视器锁这个名字的由来。&lt;&#x2F;p&gt;
+&lt;p&gt;synchronized的锁存放在每个对象的对象头的MarkWord中，在1.6之后，又增加了偏向锁的支持，减少同一线程获取锁的性能损耗。synchronized的锁状态分为无锁,偏向锁,轻量级锁,重量级锁四种。&lt;&#x2F;p&gt;
+&lt;p&gt;MarkWord结构（64位 jvm）：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;Users&#x2F;chenfeilong&#x2F;Downloads&#x2F;markword.png&quot; alt=&quot;markword&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;偏向锁在同一线程获取锁时，不需要加锁与解锁，只需要判断当前对象头是否有当前线程的偏向锁，有则获取锁，若无则去判断是否设置了偏向标识，有偏向标识，则CAS设置偏向锁，无则CAS竞争锁。&lt;&#x2F;p&gt;
+&lt;p&gt;偏向锁有一个撤销的过程，在一个线程获取到偏向锁之后，另外一个线程来竞争锁，会如下图所示，先暂停持有偏向锁的线程，检查线程是否活动（线程死了也暂停不了吧），如果还活动就开始升级为轻量级锁，否则重新偏向到新的线程。&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;Users&#x2F;chenfeilong&#x2F;Downloads&#x2F;%E5%81%8F%E5%90%91%E9%94%81%E7%9A%84%E6%92%A4%E9%94%80.png&quot; alt=&quot;偏向锁的撤销&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;轻量级锁在存在竞争的时候又会发生锁的膨胀，在轻量级锁竞争较激烈时，比如一个线程持有锁，另外一个线程在循环CAS（自旋）获取锁时，再来一个线程竞争锁，这里总不能一直自旋下去，因为比较消耗cpu，因此就升级为重量级锁。这时候竞争锁的行为就改变了，从自旋变成了阻塞。具体如下图：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;Users&#x2F;chenfeilong&#x2F;Downloads&#x2F;%E8%BD%BB%E9%87%8F%E7%BA%A7%E9%94%81.png&quot; alt=&quot;轻量级锁&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;最后锁只能升级，不能降级，因为在竞争激烈的情况下，自旋只会让cpu空转，啥事也没有做。&lt;&#x2F;p&gt;
+&lt;p&gt;总结：偏向锁解锁和加锁不需要额外的同步消耗，但是在存在竞争时会存在撤销和升级。（单纯一个线程访问需要同步吗？除非有这样一种情况，虽然也是多个线程，但是其中一个线程多次获取同一个对象的锁，这个时候，可能会有一些性能提升。另外有人还建议直接使用-XX:-UseBiasedLocking=false关闭偏向锁）&lt;&#x2F;p&gt;
+&lt;p&gt;轻量级锁用CAS，竞争时不会阻塞，但是循环CAS比较消耗CPU（基本上所有的锁（除了偏向锁），轻量级锁，重量级锁，以及互斥锁里面加锁解锁都是循环CAS，就不消耗CPU吗，其中比较合理的解释就是使用CAS是认为这个过程比较快就可以完成，如果比较慢的时候还是直接阻塞在那吧）&lt;&#x2F;p&gt;
+&lt;p&gt;重量级锁的优缺点和轻量级相对，没有什么好说的。&lt;&#x2F;p&gt;
+&lt;p&gt;参考文档：&lt;&#x2F;p&gt;
+&lt;p&gt;1.《深入理解Java虚拟机》&lt;&#x2F;p&gt;
+&lt;p&gt;2.《Java并发编程的艺术》&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Docker Compose 的简单使用</title>
+		<published>2018-01-01T23:44:18+00:00</published>
+		<updated>2018-01-01T23:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/study-docker-compile/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/study-docker-compile/</id>
+		<content type="html">&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;&#x2F;h2&gt;
+&lt;p&gt;​	Docker Compose 官方介绍：&lt;&#x2F;p&gt;
+&lt;p&gt;​	&lt;em&gt;Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;​	docker-compose是docker官方开源的容器编排工具，优点是简单易用，而且功能强大。虽然docker公司在商业化后主推它的生产级容器集群平台Swarm，但是Swarm好像没有那么幸运(前几天看到博客园就因为上了Swarm，结果基本全站挂了…),最近被k8s打得不行。如果容器数量较少，或是为了学习docker，可以先学习使用docker-compose。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;an-zhuang&quot;&gt;安装&lt;&#x2F;h2&gt;
+&lt;p&gt;​	在https:&#x2F;&#x2F;www.docker.com&#x2F;community-edition下载社区版本Docker CE，安装之后，docker和docker-compose都有了。&lt;&#x2F;p&gt;
+&lt;p&gt;​	确认是否安装成功：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;docker-compose -v
+&lt;&#x2F;span&gt;&lt;span&gt;docker-compose version 1.17.1, build 6d101fb
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;shi-yong&quot;&gt;使用&lt;&#x2F;h2&gt;
+&lt;p&gt;​	下面我们按照官方的demo来一遍：&lt;&#x2F;p&gt;
+&lt;p&gt;​	1.创建项目目录&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ mkdir composetest
+&lt;&#x2F;span&gt;&lt;span&gt;$ cd composetest
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;​	&lt;&#x2F;p&gt;
+&lt;p&gt;​	2.创建一个app.py,直接上vim，粘贴以下代码&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;time
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;redis
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span&gt;flask &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;Flask
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;app = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Flask&lt;&#x2F;span&gt;&lt;span&gt;(__name__)
+&lt;&#x2F;span&gt;&lt;span&gt;cache = redis.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Redis&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;host&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;redis&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;port&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6379&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;@app.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;route&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;index&lt;&#x2F;span&gt;&lt;span&gt;():
+&lt;&#x2F;span&gt;&lt;span&gt;    count = cache.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hits&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;You are get: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;{}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt; times.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;format&lt;&#x2F;span&gt;&lt;span&gt;(count)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;@app.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;route&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;incr&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;incr&lt;&#x2F;span&gt;&lt;span&gt;():
+&lt;&#x2F;span&gt;&lt;span&gt;    count = cache.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;incr&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hits&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;You are incr: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;{}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt; times.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;format&lt;&#x2F;span&gt;&lt;span&gt;(count)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;@app.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;route&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;&#x2F;decr&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;decr&lt;&#x2F;span&gt;&lt;span&gt;():
+&lt;&#x2F;span&gt;&lt;span&gt;    count = cache.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;decr&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hits&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;You are decr: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;{}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt; times.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\n&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;format&lt;&#x2F;span&gt;&lt;span&gt;(count)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;__name__ == &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;__main__&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;:
+&lt;&#x2F;span&gt;&lt;span&gt;    app.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;run&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;host&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;0.0.0.0&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;debug&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;True&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;​	&lt;&#x2F;p&gt;
+&lt;p&gt;​	3.创建构建镜像使用的Dockerfile&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dockerfile&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dockerfile &quot;&gt;&lt;code class=&quot;language-dockerfile&quot; data-lang=&quot;dockerfile&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;FROM&lt;&#x2F;span&gt;&lt;span&gt; python:3.4-alpine
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;ADD &lt;&#x2F;span&gt;&lt;span&gt;. &#x2F;code
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;WORKDIR &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;code
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;RUN &lt;&#x2F;span&gt;&lt;span&gt;pip install -r requirements.txt
+&lt;&#x2F;span&gt;&lt;span&gt;CMD [&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;python&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;app.py&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;​	4.由2可知我们这个项目需要依赖Flask和Redis，需要把依赖放到requirements.txt，然后pip去安装&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;flask
+&lt;&#x2F;span&gt;&lt;span&gt;redis
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;​	5.最后最重要的一步，docker-compose.yml文件描述了整个项目服务的定义&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dockerfile&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-dockerfile &quot;&gt;&lt;code class=&quot;language-dockerfile&quot; data-lang=&quot;dockerfile&quot;&gt;&lt;span&gt;version: &amp;#39;3&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;services:
+&lt;&#x2F;span&gt;&lt;span&gt;  web:
+&lt;&#x2F;span&gt;&lt;span&gt;    build: .
+&lt;&#x2F;span&gt;&lt;span&gt;    ports:
+&lt;&#x2F;span&gt;&lt;span&gt;     - &amp;quot;5000:5000&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    volumes:
+&lt;&#x2F;span&gt;&lt;span&gt;     - .:&#x2F;code
+&lt;&#x2F;span&gt;&lt;span&gt;  redis:
+&lt;&#x2F;span&gt;&lt;span&gt;    image: &amp;quot;redis:alpine&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;​	6.在项目目录执行docker-compose up -d项目就可以跑起来，需要下载基础镜像和构建，会花费一些时间。&lt;&#x2F;p&gt;
+&lt;p&gt;如果遇到ERROR: Couldn&#x27;t connect to Docker daemon. You might need to start Docker for Mac.请检查Docker是否已经启动。&lt;&#x2F;p&gt;
+&lt;p&gt;​	启动成功输出：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;docker-compose up -d
+&lt;&#x2F;span&gt;&lt;span&gt;Starting composetest_web_1 ...
+&lt;&#x2F;span&gt;&lt;span&gt;Starting composetest_web_1
+&lt;&#x2F;span&gt;&lt;span&gt;Starting composetest_redis_1 ...
+&lt;&#x2F;span&gt;&lt;span&gt;Starting composetest_web_1 ... done
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;docker-compose ps
+&lt;&#x2F;span&gt;&lt;span&gt;       Name                      Command               State           Ports
+&lt;&#x2F;span&gt;&lt;span&gt;-------------------------------------------------------------------------------------
+&lt;&#x2F;span&gt;&lt;span&gt;composetest_redis_1   docker-entrypoint.sh redis ...   Up      6379&#x2F;tcp
+&lt;&#x2F;span&gt;&lt;span&gt;composetest_web_1     python app.py                    Up      0.0.0.0:5000-&amp;gt;5000&#x2F;tcp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;​	访问http:&#x2F;&#x2F;127.0.0.1:5000&#x2F;将会看到目前一个统计数，http:&#x2F;&#x2F;127.0.0.1:5000&#x2F;incr 将会增加计数，反之decr将会减少计数。&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hou-xu-ji-hua&quot;&gt;后续计划&lt;&#x2F;h2&gt;
+&lt;p&gt;1.k8s和istio搭建以及简单使用&lt;&#x2F;p&gt;
+&lt;p&gt;2.spring boot&#x2F;cloud侵入式微服务与Service Mesh非侵入式微服务的对比&lt;&#x2F;p&gt;
+&lt;p&gt;3.Docker与Unikernel的对比&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;can-kao-wen-dang&quot;&gt;参考文档&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.docker.com&#x2F;compose&#x2F;overview&#x2F;&quot;&gt;Docker Compose Doc&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.cnblogs.com&#x2F;cmt&#x2F;p&#x2F;8143854.html&quot;&gt;博客园Docker Swarm 集群宕机事件&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;mp.weixin.qq.com&#x2F;s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651000439&amp;amp;idx=1&amp;amp;sn=df791ea111ecf6237ca1fabad9142d45&amp;amp;chksm=bdbef6248ac97f326cf1efd16056538e8c43d94805ee0040bfee9033ce38b508bcc035ca766d&amp;amp;mpshare=1&amp;amp;scene=23&amp;amp;srcid=0109DQ37i2cMeL8mKtd7LcTW#rd&quot;&gt;后Kubernetes时代&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>添加签名相同但返回值不同的方法</title>
+		<published>2017-11-01T23:44:18+00:00</published>
+		<updated>2017-11-01T23:44:18+00:00</updated>
+		<link rel="alternate" href="https://xunfeng1980.github.io/blog/add-same-sign-method-for-java/" type="text/html"/>
+		<id>https://xunfeng1980.github.io/blog/add-same-sign-method-for-java/</id>
+		<content type="html">&lt;p&gt;在面试时，被问到，为什么重载是参数不相同，而不是返回值不相同或者同时不相同？仔细一想，这个问题意义并不大，我们来做一个实验。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;java&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-java &quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;package &lt;&#x2F;span&gt;&lt;span&gt;com.lux.study.assist;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;**
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@author&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;: lux
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * @date: 2017&#x2F;10&#x2F;24 13:51
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;UserInfo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;private &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Integer &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;id;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;private &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;name;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Integer &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;getId&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; id;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setId&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Integer &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;id&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.id &lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; id;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;getName&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; name;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;setName&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.name &lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; name;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    @&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;Override
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;toString&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;UserInfo{&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; +
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;                &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;id=&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; id &lt;&#x2F;span&gt;&lt;span&gt;+
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;                &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;, name=&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; name &lt;&#x2F;span&gt;&lt;span&gt;+ &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;\&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; +
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;                &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;这是上次的主角UserInfo类，如果我们尝试添加一个返回值为Integer的getName方法，将无法通过编译。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;Error:(22, 20) java: 已在类 com.lux.study.assist.UserInfo中定义了方法 getName()
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;下面我们通过javassist来生成这样一个签名相同返回值不同的函数，并反射调用。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;java&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-java &quot;&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;package &lt;&#x2F;span&gt;&lt;span&gt;com.lux.study.assist;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;javassist.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ClassPool&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;javassist.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CtClass&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;javassist.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CtMethod&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;javassist.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CtNewMethod&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;java.lang.reflect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Method&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;**
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;@author&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;: lux
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; * @date: 2017&#x2F;11&#x2F;1 23:25
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt; *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;MethodTest &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;public static void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;args&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;String&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; className &lt;&#x2F;span&gt;&lt;span&gt;= &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;com.lux.study.assist.UserInfo&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;UserInfo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; userInfo &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;new &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;UserInfo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        userInfo.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;setName&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;test&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        userInfo.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;setId&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;try &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ClassPool&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; pool &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;ClassPool&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getDefault&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CtClass&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; cc &lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; pool.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(className);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CtMethod&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; mthd &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;CtNewMethod&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;make&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;public Integer getName() { return  Integer.valueOf(2); }&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;, cc);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            cc.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;addMethod&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(mthd);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;AppClassLoader&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; appClassLoader &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;AppClassLoader&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getInstance&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;&amp;gt; clazz &lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; appClassLoader.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;findClassByBytes&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(className, cc.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;toBytecode&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;());
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Object&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; obj &lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; appClassLoader.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getObj&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(clazz, userInfo);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Method&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; methods &lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; obj.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getClass&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getDeclaredMethods&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Method&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; method &lt;&#x2F;span&gt;&lt;span&gt;:&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; methods) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(method.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;getName&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;contains&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;getName&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;)) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;System&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;.out.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;println&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(method.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;toString&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;() &lt;&#x2F;span&gt;&lt;span&gt;+ &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt; -&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; +&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt; method.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;invoke&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(obj));
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;                }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;catch &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ebcb8b;&quot;&gt;Exception &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;e&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;            e.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;printStackTrace&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;        }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eff1f5;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;这是最后的结果，证明方法返回值还是有用的，至于为什么重载的时候，必须是参数不相同，而不是返回值不相同，可能就是别人说的，大多时候，我们可能并不关心返回结果。&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;public java.lang.Integer com.lux.study.assist.UserInfo.getName() -&amp;gt; 2
+&lt;&#x2F;span&gt;&lt;span&gt;public java.lang.String com.lux.study.assist.UserInfo.getName() -&amp;gt; test
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>

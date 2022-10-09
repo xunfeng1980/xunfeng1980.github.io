@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2"  type="font/woff2" crossorigin>
+
+
+<link rel="stylesheet" href="https://xunfeng1980.github.io/main.css">
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+
+	
+
+
+	
+
+<title>Junit 多策略测试切换 | Home</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://xunfeng1980.github.io/blog/catagory-in-junit/">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <meta name="twitter:image" content="https://xunfeng1980.github.io/doks.png">
+  
+  <meta name="twitter:title" content="Junit 多策略测试切换">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+  
+  <meta property="og:title" content="Junit 多策略测试切换">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://xunfeng1980.github.io/blog/catagory-in-junit/">
+
+  
+    <meta property="og:image" content="https://xunfeng1980.github.io/doks.png">
+  
+
+  <meta property="og:updated_time" content="">
+  <meta property="og:site_name" content="Junit 多策略测试切换">
+
+  
+
+  
+
+  
+  <meta property="article:publisher" content="https://www.facebook.com/">
+  <meta property="article:author" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          {
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "Home",
+            "item": "https://xunfeng1980.github.io/"
+          },
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  2 ,
+            "name": "Blog",
+            "item": "https://xunfeng1980.github.io/blog/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  3 ,
+            "name": "Catagory In Junit",
+            "item": "https://xunfeng1980.github.io/blog/catagory-in-junit/"
+          },
+        
+      
+    
+  }
+</script>
+
+
+
+
+
+
+  <meta name="theme-color" content="#fff">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://xunfeng1980.github.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://xunfeng1980.github.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://xunfeng1980.github.io/favicon-16x16.png">
+  
+
+
+  
+
+</head>
+
+  
+    
+  
+
+<body class="page single">
+  
+    
+<div class="header-bar fixed-top"></div>
+<header class="navbar fixed-top navbar-expand-md navbar-light">
+	<div class="container">
+		<input class="menu-btn order-0" type="checkbox" id="menu-btn">
+		<label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
+		<a class="navbar-brand order-1 order-md-0 me-auto" href="https://xunfeng1980.github.io">Home</a>
+		<button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+			<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+			<span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+		</button>
+		<ul class="navbar-nav fork-me order-3 order-md-5">
+			
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/xunfeng1980"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span></a>
+					</li>
+				
+			
+		</ul>
+		<div class="collapse navbar-collapse order-4 order-md-1">
+			<ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+				
+					
+				
+				
+				
+					
+						<li class="nav-item">
+							<a class="nav-link" href="https://xunfeng1980.github.io/blog/">Blog</a>
+						</li>
+					
+				
+			</ul>
+			<div class="break order-6 d-md-none"></div>
+			
+				<form class="navbar-form flex-grow-1 order-7 order-md-3">
+					<input id="userinput" class="form-control is-search" type="search" placeholder="Search docs..."
+						aria-label="Search docs..." autocomplete="off">
+					<div id="suggestions" class="shadow bg-white rounded"></div>
+				</form>
+			
+		</div>
+	</div>
+</header>
+
+  
+
+  
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xxl-8">
+        <article>
+          <div class="page-header">
+            <h1>Junit 多策略测试切换</h1>
+          </div>
+          
+          <h2 id="jie-shao">介绍</h2>
+<p>最近在弄单元测试，之前基础版本的测试基本都是写好的，但是缺少高级版本的测试，又不想把代码copy一份，要就地实现基础版和高级版的测试复用，并且需要从配置读取测试策略来指定当前测试策略。因为基础版和高级版只是大部分功能差不多，因此还要做到通过注解的方式来限定当前测试方法或测试类是否运行于当前测试策略。下面废话少说，Let's Go!</p>
+<h2 id="shi-jian">实践</h2>
+<p>之前也没有好好深入junit，仔细想了一下，我们要做到以下两点：</p>
+<p>1.需要做到通过注解限定当前测试类或测试方法是否执行。这个使用Category注解可以实现，但是Category的作用太过于简单，仅仅只能做到限定测试是否执行。</p>
+<p>2.需要做到针对同一测试方法在不同测试策略下可以有不相同的处理，其中可能请求地址不一样，返回结果以及断言处理不一样等。这个之前最初考虑的时候太过于复杂，当时想实现自定义注解，然后通过aop拦截去改写请求参数和处理流程。这样做太过于复杂，而且不同测试策略不会同时运行。最后的做法就是将测试流程提取到接口，各自的测试策略自己去实现，然后在初始化时，根据当前测试策略去绑定对应的实例，测试使用时直接使用接口就可以实现多策略测试的切换，再结合第一点基本上就可以满足需求了。</p>
+<p>主要代码如下：</p>
+<pre data-lang="java" style="background-color:#2b303b;color:#c0c5ce;" class="language-java "><code class="language-java" data-lang="java"><span style="color:#b48ead;">package </span><span>com.lux.junit;
+</span><span>
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.category.</span><span style="color:#ebcb8b;">BasicCategory</span><span>;
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.category.</span><span style="color:#ebcb8b;">SeniorCategory</span><span>;
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.helper.</span><span style="color:#ebcb8b;">BaseUserHelper</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.junit.</span><span style="color:#ebcb8b;">Test</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.junit.experimental.categories.</span><span style="color:#ebcb8b;">Category</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.junit.runner.</span><span style="color:#ebcb8b;">RunWith</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.springframework.beans.factory.annotation.</span><span style="color:#ebcb8b;">Autowired</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.springframework.boot.test.context.</span><span style="color:#ebcb8b;">SpringBootTest</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.springframework.test.context.junit4.</span><span style="color:#ebcb8b;">SpringRunner</span><span>;
+</span><span>
+</span><span>@</span><span style="color:#bf616a;">RunWith</span><span>(</span><span style="color:#ebcb8b;">SpringRunner</span><span>.</span><span style="color:#bf616a;">class</span><span>)
+</span><span>@</span><span style="color:#bf616a;">SpringBootTest
+</span><span style="color:#b48ead;">public class </span><span style="color:#ebcb8b;">JunitApplicationTests </span><span style="color:#eff1f5;">{
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">    @</span><span style="color:#bf616a;">Autowired
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">private </span><span style="color:#ebcb8b;">BaseUserHelper </span><span style="color:#eff1f5;">userHelper;
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">    @</span><span style="color:#bf616a;">Test
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">contextLoads</span><span style="color:#eff1f5;">() {
+</span><span style="color:#eff1f5;">    }
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">    @</span><span style="color:#bf616a;">Test
+</span><span style="color:#eff1f5;">    @</span><span style="color:#bf616a;">Category</span><span style="color:#eff1f5;">({</span><span style="color:#ebcb8b;">BasicCategory</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">class</span><span style="color:#eff1f5;">, </span><span style="color:#ebcb8b;">SeniorCategory</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">class</span><span style="color:#eff1f5;">})
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">getUserTest</span><span style="color:#eff1f5;">() {
+</span><span style="color:#eff1f5;">        </span><span style="color:#ebcb8b;">System</span><span style="color:#eff1f5;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#eff1f5;">(userHelper.</span><span style="color:#bf616a;">getUser</span><span style="color:#eff1f5;">());
+</span><span style="color:#eff1f5;">    }
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">    @</span><span style="color:#bf616a;">Test
+</span><span style="color:#eff1f5;">    @</span><span style="color:#bf616a;">Category</span><span style="color:#eff1f5;">(</span><span style="color:#ebcb8b;">SeniorCategory</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">class</span><span style="color:#eff1f5;">)
+</span><span style="color:#eff1f5;">    </span><span style="color:#b48ead;">public void </span><span style="color:#8fa1b3;">getSeniorUserTest</span><span style="color:#eff1f5;">() {
+</span><span style="color:#eff1f5;">        </span><span style="color:#ebcb8b;">System</span><span style="color:#eff1f5;">.out.</span><span style="color:#bf616a;">println</span><span style="color:#eff1f5;">(userHelper.</span><span style="color:#bf616a;">getUser</span><span style="color:#eff1f5;">());
+</span><span style="color:#eff1f5;">    }
+</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">}
+</span><span>
+</span></code></pre>
+<pre data-lang="Java" style="background-color:#2b303b;color:#c0c5ce;" class="language-Java "><code class="language-Java" data-lang="Java"><span style="color:#b48ead;">package </span><span>com.lux.junit.configure;
+</span><span>
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.category.</span><span style="color:#ebcb8b;">BasicCategory</span><span>;
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.helper.</span><span style="color:#ebcb8b;">BaseUserHelper</span><span>;
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.helper.</span><span style="color:#ebcb8b;">BasicUserHelper</span><span>;
+</span><span style="color:#b48ead;">import </span><span>com.lux.junit.helper.</span><span style="color:#ebcb8b;">SeniorUserHelper</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.springframework.beans.factory.annotation.</span><span style="color:#ebcb8b;">Value</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.springframework.context.annotation.</span><span style="color:#ebcb8b;">Bean</span><span>;
+</span><span style="color:#b48ead;">import </span><span>org.springframework.context.annotation.</span><span style="color:#ebcb8b;">Configuration</span><span>;
+</span><span>
+</span><span style="color:#65737e;">/**
+</span><span style="color:#65737e;"> * Created with IntelliJ IDEA.
+</span><span style="color:#65737e;"> * User: chenfeilong
+</span><span style="color:#65737e;"> * Date: 2018/1/28
+</span><span style="color:#65737e;"> * Time: 23:30
+</span><span style="color:#65737e;"> * Description:
+</span><span style="color:#65737e;"> */
+</span><span style="color:#65737e;">@Configuration
+</span><span style="color:#65737e;">public class CategoryConfigure {
+</span><span style="color:#65737e;">    @Value(&quot;${test.category}&quot;)
+</span><span style="color:#65737e;">    String currentCategory;
+</span><span style="color:#65737e;">
+</span><span style="color:#65737e;">    @Bean(&quot;userHelper&quot;)
+</span><span style="color:#65737e;">    public BaseUserHelper userHelper() {
+</span><span style="color:#65737e;">        if (BasicCategory.class.getName().equals(currentCategory)) {
+</span><span style="color:#65737e;">            return new BasicUserHelper();
+</span><span style="color:#65737e;">        } else {
+</span><span style="color:#65737e;">            return new SeniorUserHelper();
+</span><span style="color:#65737e;">        }
+</span><span style="color:#65737e;">    }
+</span><span style="color:#65737e;">}
+</span><span style="color:#65737e;">
+</span></code></pre>
+<h2 id="zui-hou">最后</h2>
+<p>Category需要传递includeCategories参数，其实它可以是多个策略。通常使用命令行传入或使用gradle传入。但是我们需要从配置文件读入，需要像下面这样做。</p>
+<pre data-lang="groovy" style="background-color:#2b303b;color:#c0c5ce;" class="language-groovy "><code class="language-groovy" data-lang="groovy"><span>test {
+</span><span>    useJUnit {
+</span><span>        includeCategories getCategory()
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">String </span><span style="color:#8fa1b3;">getCategory</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">def</span><span> category = doGetCategory()
+</span><span>    </span><span style="color:#96b5b4;">println</span><span>(&quot;</span><span style="color:#a3be8c;">current catagory: </span><span>&quot; + category)
+</span><span>    </span><span style="color:#b48ead;">return</span><span> category
+</span><span>}
+</span><span>
+</span><span style="color:#b48ead;">String </span><span style="color:#8fa1b3;">doGetCategory</span><span>() {
+</span><span>    </span><span style="color:#b48ead;">def</span><span> propertiesFilePath = &quot;</span><span style="color:#a3be8c;">src/main/resources/application.properties</span><span>&quot;
+</span><span>    </span><span style="color:#b48ead;">def</span><span> defaultCategory = &quot;</span><span style="color:#a3be8c;">com.lux.junit.category.BasicCategory</span><span>&quot;
+</span><span>    </span><span style="color:#b48ead;">File</span><span> propFile = </span><span style="color:#b48ead;">new File</span><span>(propertiesFilePath)
+</span><span>    </span><span style="color:#b48ead;">if</span><span> (propFile.canRead()) {
+</span><span>        </span><span style="color:#b48ead;">Properties</span><span> props = </span><span style="color:#b48ead;">new Properties</span><span>()
+</span><span>        props.load(</span><span style="color:#b48ead;">new FileInputStream</span><span>(propFile))
+</span><span>        </span><span style="color:#b48ead;">return</span><span> props.getProperty(&quot;</span><span style="color:#a3be8c;">test.category</span><span>&quot;)
+</span><span>    }
+</span><span>    </span><span style="color:#96b5b4;">println</span><span>(&quot;</span><span style="color:#a3be8c;">can&#39;t find catagory config,use default catagory </span><span>&quot; + defaultCategory)
+</span><span>    </span><span style="color:#b48ead;">return</span><span> defaultCategory
+</span><span>}
+</span></code></pre>
+<p>测试结果</p>
+<p>BasicCategory:</p>
+<h2 id="can-kao-mu-lu">参考目录</h2>
+<p>1.<a href="https://github.com/junit-team/junit4/wiki/Categories">junit wiki</a></p>
+<p>2.<a href="https://git.coding.net/uleaf/junit.git">完整代码</a></p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    
+<footer class="footer text-muted">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 order-last order-lg-first">
+				<ul class="list-inline">
+					
+						<li class="list-inline-item">Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-lg-8 order-first order-lg-last text-lg-end">
+				<ul class="list-inline">
+					
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/privacy-policy/">Privacy</a></li>
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/docs/contributing/code-of-conduct/">Code of Conduct</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+  
+
+  
+<script type="text/javascript" src="https://xunfeng1980.github.io/js/main.js" defer></script>
+
+  <script type="text/javascript" src="https://xunfeng1980.github.io/plugins/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/js/search.js" defer></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2"  type="font/woff2" crossorigin>
+
+
+<link rel="stylesheet" href="https://xunfeng1980.github.io/main.css">
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+
+	
+
+
+	
+
+<title>Docker Compose 的简单使用 | Home</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://xunfeng1980.github.io/blog/study-docker-compile/">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <meta name="twitter:image" content="https://xunfeng1980.github.io/doks.png">
+  
+  <meta name="twitter:title" content="Docker Compose 的简单使用">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+  
+  <meta property="og:title" content="Docker Compose 的简单使用">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://xunfeng1980.github.io/blog/study-docker-compile/">
+
+  
+    <meta property="og:image" content="https://xunfeng1980.github.io/doks.png">
+  
+
+  <meta property="og:updated_time" content="">
+  <meta property="og:site_name" content="Docker Compose 的简单使用">
+
+  
+
+  
+
+  
+  <meta property="article:publisher" content="https://www.facebook.com/">
+  <meta property="article:author" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          {
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "Home",
+            "item": "https://xunfeng1980.github.io/"
+          },
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  2 ,
+            "name": "Blog",
+            "item": "https://xunfeng1980.github.io/blog/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  3 ,
+            "name": "Study Docker Compile",
+            "item": "https://xunfeng1980.github.io/blog/study-docker-compile/"
+          },
+        
+      
+    
+  }
+</script>
+
+
+
+
+
+
+  <meta name="theme-color" content="#fff">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://xunfeng1980.github.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://xunfeng1980.github.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://xunfeng1980.github.io/favicon-16x16.png">
+  
+
+
+  
+
+</head>
+
+  
+    
+  
+
+<body class="page single">
+  
+    
+<div class="header-bar fixed-top"></div>
+<header class="navbar fixed-top navbar-expand-md navbar-light">
+	<div class="container">
+		<input class="menu-btn order-0" type="checkbox" id="menu-btn">
+		<label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
+		<a class="navbar-brand order-1 order-md-0 me-auto" href="https://xunfeng1980.github.io">Home</a>
+		<button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+			<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+			<span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+		</button>
+		<ul class="navbar-nav fork-me order-3 order-md-5">
+			
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/xunfeng1980"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span></a>
+					</li>
+				
+			
+		</ul>
+		<div class="collapse navbar-collapse order-4 order-md-1">
+			<ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+				
+					
+				
+				
+				
+					
+						<li class="nav-item">
+							<a class="nav-link" href="https://xunfeng1980.github.io/blog/">Blog</a>
+						</li>
+					
+				
+			</ul>
+			<div class="break order-6 d-md-none"></div>
+			
+				<form class="navbar-form flex-grow-1 order-7 order-md-3">
+					<input id="userinput" class="form-control is-search" type="search" placeholder="Search docs..."
+						aria-label="Search docs..." autocomplete="off">
+					<div id="suggestions" class="shadow bg-white rounded"></div>
+				</form>
+			
+		</div>
+	</div>
+</header>
+
+  
+
+  
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xxl-8">
+        <article>
+          <div class="page-header">
+            <h1>Docker Compose 的简单使用</h1>
+          </div>
+          
+          <h2 id="jie-shao">介绍</h2>
+<p>​	Docker Compose 官方介绍：</p>
+<p>​	<em>Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration.</em></p>
+<p>​	docker-compose是docker官方开源的容器编排工具，优点是简单易用，而且功能强大。虽然docker公司在商业化后主推它的生产级容器集群平台Swarm，但是Swarm好像没有那么幸运(前几天看到博客园就因为上了Swarm，结果基本全站挂了…),最近被k8s打得不行。如果容器数量较少，或是为了学习docker，可以先学习使用docker-compose。</p>
+<h2 id="an-zhuang">安装</h2>
+<p>​	在https://www.docker.com/community-edition下载社区版本Docker CE，安装之后，docker和docker-compose都有了。</p>
+<p>​	确认是否安装成功：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>docker-compose -v
+</span><span>docker-compose version 1.17.1, build 6d101fb
+</span></code></pre>
+<h2 id="shi-yong">使用</h2>
+<p>​	下面我们按照官方的demo来一遍：</p>
+<p>​	1.创建项目目录</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>$ mkdir composetest
+</span><span>$ cd composetest
+</span></code></pre>
+<p>​	</p>
+<p>​	2.创建一个app.py,直接上vim，粘贴以下代码</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#b48ead;">import </span><span>time
+</span><span>
+</span><span style="color:#b48ead;">import </span><span>redis
+</span><span style="color:#b48ead;">from </span><span>flask </span><span style="color:#b48ead;">import </span><span>Flask
+</span><span>
+</span><span>app = </span><span style="color:#bf616a;">Flask</span><span>(__name__)
+</span><span>cache = redis.</span><span style="color:#bf616a;">Redis</span><span>(</span><span style="color:#bf616a;">host</span><span>=&#39;</span><span style="color:#a3be8c;">redis</span><span>&#39;, </span><span style="color:#bf616a;">port</span><span>=</span><span style="color:#d08770;">6379</span><span>)
+</span><span>
+</span><span>
+</span><span>@app.</span><span style="color:#bf616a;">route</span><span>(&#39;</span><span style="color:#a3be8c;">/</span><span>&#39;)
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">index</span><span>():
+</span><span>    count = cache.</span><span style="color:#bf616a;">get</span><span>(&#39;</span><span style="color:#a3be8c;">hits</span><span>&#39;)
+</span><span>    </span><span style="color:#b48ead;">return </span><span>&#39;</span><span style="color:#a3be8c;">You are get: </span><span style="color:#d08770;">{}</span><span style="color:#a3be8c;"> times.</span><span style="color:#96b5b4;">\n</span><span>&#39;.</span><span style="color:#bf616a;">format</span><span>(count)
+</span><span>
+</span><span>@app.</span><span style="color:#bf616a;">route</span><span>(&#39;</span><span style="color:#a3be8c;">/incr</span><span>&#39;)
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">incr</span><span>():
+</span><span>    count = cache.</span><span style="color:#bf616a;">incr</span><span>(&#39;</span><span style="color:#a3be8c;">hits</span><span>&#39;)
+</span><span>    </span><span style="color:#b48ead;">return </span><span>&#39;</span><span style="color:#a3be8c;">You are incr: </span><span style="color:#d08770;">{}</span><span style="color:#a3be8c;"> times.</span><span style="color:#96b5b4;">\n</span><span>&#39;.</span><span style="color:#bf616a;">format</span><span>(count)
+</span><span>
+</span><span>@app.</span><span style="color:#bf616a;">route</span><span>(&#39;</span><span style="color:#a3be8c;">/decr</span><span>&#39;)
+</span><span style="color:#b48ead;">def </span><span style="color:#8fa1b3;">decr</span><span>():
+</span><span>    count = cache.</span><span style="color:#bf616a;">decr</span><span>(&#39;</span><span style="color:#a3be8c;">hits</span><span>&#39;)
+</span><span>    </span><span style="color:#b48ead;">return </span><span>&#39;</span><span style="color:#a3be8c;">You are decr: </span><span style="color:#d08770;">{}</span><span style="color:#a3be8c;"> times.</span><span style="color:#96b5b4;">\n</span><span>&#39;.</span><span style="color:#bf616a;">format</span><span>(count)
+</span><span>
+</span><span>
+</span><span style="color:#b48ead;">if </span><span>__name__ == &quot;</span><span style="color:#a3be8c;">__main__</span><span>&quot;:
+</span><span>    app.</span><span style="color:#bf616a;">run</span><span>(</span><span style="color:#bf616a;">host</span><span>=&quot;</span><span style="color:#a3be8c;">0.0.0.0</span><span>&quot;, </span><span style="color:#bf616a;">debug</span><span>=</span><span style="color:#d08770;">True</span><span>)
+</span><span>
+</span></code></pre>
+<p>​	</p>
+<p>​	3.创建构建镜像使用的Dockerfile</p>
+<pre data-lang="dockerfile" style="background-color:#2b303b;color:#c0c5ce;" class="language-dockerfile "><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#b48ead;">FROM</span><span> python:3.4-alpine
+</span><span style="color:#b48ead;">ADD </span><span>. /code
+</span><span style="color:#b48ead;">WORKDIR </span><span>/code
+</span><span style="color:#b48ead;">RUN </span><span>pip install -r requirements.txt
+</span><span>CMD [&quot;</span><span style="color:#a3be8c;">python</span><span>&quot;, &quot;</span><span style="color:#a3be8c;">app.py</span><span>&quot;]
+</span></code></pre>
+<p>​	4.由2可知我们这个项目需要依赖Flask和Redis，需要把依赖放到requirements.txt，然后pip去安装</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>flask
+</span><span>redis
+</span></code></pre>
+<p>​	5.最后最重要的一步，docker-compose.yml文件描述了整个项目服务的定义</p>
+<pre data-lang="dockerfile" style="background-color:#2b303b;color:#c0c5ce;" class="language-dockerfile "><code class="language-dockerfile" data-lang="dockerfile"><span>version: &#39;3&#39;
+</span><span>services:
+</span><span>  web:
+</span><span>    build: .
+</span><span>    ports:
+</span><span>     - &quot;5000:5000&quot;
+</span><span>    volumes:
+</span><span>     - .:/code
+</span><span>  redis:
+</span><span>    image: &quot;redis:alpine&quot;
+</span></code></pre>
+<p>​	6.在项目目录执行docker-compose up -d项目就可以跑起来，需要下载基础镜像和构建，会花费一些时间。</p>
+<p>如果遇到ERROR: Couldn't connect to Docker daemon. You might need to start Docker for Mac.请检查Docker是否已经启动。</p>
+<p>​	启动成功输出：</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>docker-compose up -d
+</span><span>Starting composetest_web_1 ...
+</span><span>Starting composetest_web_1
+</span><span>Starting composetest_redis_1 ...
+</span><span>Starting composetest_web_1 ... done
+</span></code></pre>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>docker-compose ps
+</span><span>       Name                      Command               State           Ports
+</span><span>-------------------------------------------------------------------------------------
+</span><span>composetest_redis_1   docker-entrypoint.sh redis ...   Up      6379/tcp
+</span><span>composetest_web_1     python app.py                    Up      0.0.0.0:5000-&gt;5000/tcp
+</span></code></pre>
+<p>​	访问http://127.0.0.1:5000/将会看到目前一个统计数，http://127.0.0.1:5000/incr 将会增加计数，反之decr将会减少计数。</p>
+<h2 id="hou-xu-ji-hua">后续计划</h2>
+<p>1.k8s和istio搭建以及简单使用</p>
+<p>2.spring boot/cloud侵入式微服务与Service Mesh非侵入式微服务的对比</p>
+<p>3.Docker与Unikernel的对比</p>
+<h2 id="can-kao-wen-dang">参考文档</h2>
+<ol>
+<li><a href="https://docs.docker.com/compose/overview/">Docker Compose Doc</a></li>
+<li><a href="http://www.cnblogs.com/cmt/p/8143854.html">博客园Docker Swarm 集群宕机事件</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651000439&amp;idx=1&amp;sn=df791ea111ecf6237ca1fabad9142d45&amp;chksm=bdbef6248ac97f326cf1efd16056538e8c43d94805ee0040bfee9033ce38b508bcc035ca766d&amp;mpshare=1&amp;scene=23&amp;srcid=0109DQ37i2cMeL8mKtd7LcTW#rd">后Kubernetes时代</a></li>
+</ol>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    
+<footer class="footer text-muted">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 order-last order-lg-first">
+				<ul class="list-inline">
+					
+						<li class="list-inline-item">Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-lg-8 order-first order-lg-last text-lg-end">
+				<ul class="list-inline">
+					
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/privacy-policy/">Privacy</a></li>
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/docs/contributing/code-of-conduct/">Code of Conduct</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+  
+
+  
+<script type="text/javascript" src="https://xunfeng1980.github.io/js/main.js" defer></script>
+
+  <script type="text/javascript" src="https://xunfeng1980.github.io/plugins/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/js/search.js" defer></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-regular.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="https://xunfeng1980.github.io/fonts/vendor/jost/jost-v4-latin-700.woff2"  type="font/woff2" crossorigin>
+
+
+<link rel="stylesheet" href="https://xunfeng1980.github.io/main.css">
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+    
+  
+  
+  
+    
+  
+  
+  
+  
+    
+  
+  
+  
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+
+	
+
+
+	
+
+<title>最近学到的 Git 技巧 | Home</title>
+<meta name="description" content="">
+<link rel="canonical" href="https://xunfeng1980.github.io/blog/git-study/">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <meta name="twitter:image" content="https://xunfeng1980.github.io/doks.png">
+  
+  <meta name="twitter:title" content="最近学到的 Git 技巧">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+  
+  <meta property="og:title" content="最近学到的 Git 技巧">
+  <meta property="og:description" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://xunfeng1980.github.io/blog/git-study/">
+
+  
+    <meta property="og:image" content="https://xunfeng1980.github.io/doks.png">
+  
+
+  <meta property="og:updated_time" content="">
+  <meta property="og:site_name" content="最近学到的 Git 技巧">
+
+  
+
+  
+
+  
+  <meta property="article:publisher" content="https://www.facebook.com/">
+  <meta property="article:author" content="https://www.facebook.com/">
+  <meta property="og:locale" content="en_US">
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          {
+            "@type": "ListItem",
+            "position":  1 ,
+            "name": "Home",
+            "item": "https://xunfeng1980.github.io/"
+          },
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  2 ,
+            "name": "Blog",
+            "item": "https://xunfeng1980.github.io/blog/"
+          },
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          
+          
+          {
+            "@type": "ListItem",
+            "position":  3 ,
+            "name": "Git Study",
+            "item": "https://xunfeng1980.github.io/blog/git-study/"
+          },
+        
+      
+    
+  }
+</script>
+
+
+
+
+
+
+  <meta name="theme-color" content="#fff">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://xunfeng1980.github.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://xunfeng1980.github.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://xunfeng1980.github.io/favicon-16x16.png">
+  
+
+
+  
+
+</head>
+
+  
+    
+  
+
+<body class="page single">
+  
+    
+<div class="header-bar fixed-top"></div>
+<header class="navbar fixed-top navbar-expand-md navbar-light">
+	<div class="container">
+		<input class="menu-btn order-0" type="checkbox" id="menu-btn">
+		<label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
+		<a class="navbar-brand order-1 order-md-0 me-auto" href="https://xunfeng1980.github.io">Home</a>
+		<button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+			<span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+			<span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+		</button>
+		<ul class="navbar-nav fork-me order-3 order-md-5">
+			
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/xunfeng1980"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><span class="ms-2 visually-hidden">GitHub</span></a>
+					</li>
+				
+			
+		</ul>
+		<div class="collapse navbar-collapse order-4 order-md-1">
+			<ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+				
+					
+				
+				
+				
+					
+						<li class="nav-item">
+							<a class="nav-link" href="https://xunfeng1980.github.io/blog/">Blog</a>
+						</li>
+					
+				
+			</ul>
+			<div class="break order-6 d-md-none"></div>
+			
+				<form class="navbar-form flex-grow-1 order-7 order-md-3">
+					<input id="userinput" class="form-control is-search" type="search" placeholder="Search docs..."
+						aria-label="Search docs..." autocomplete="off">
+					<div id="suggestions" class="shadow bg-white rounded"></div>
+				</form>
+			
+		</div>
+	</div>
+</header>
+
+  
+
+  
+<div class="wrap container" role="document">
+  <div class="content">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xxl-8">
+        <article>
+          <div class="page-header">
+            <h1>最近学到的 Git 技巧</h1>
+          </div>
+          
+          <p>##整理提交记录</p>
+<p>有时候完成一个功能或者修复一个问题需要多次提交，但是在向主发布分支发起 MR 时，太多次数的提交记录不美观，这个时候我们就需要整理提交记录。</p>
+<p>整理提交记录一般使用 rebase。在终端中输入 git rebase -i origin/xxx,其中 xxx 代表你需要发起 MR 的分支（注：xxx一般为保护分支，-i代表rebase交互模式），</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>  1 pick 1204858 fix 123
+</span><span>  2 pick 379415c fix 12
+</span><span>  3 pick f7e189f 2233444
+</span><span>  4 pick ab3aa25 bug 1
+</span><span>  5 pick a8f5ee3 new function 1
+</span><span>  6
+</span><span>  7 # Rebase 2c6c58f..a8f5ee3 onto 2c6c58f (5 commands)
+</span><span>  8 #
+</span><span>  9 # Commands:
+</span><span> 10 # p, pick = use commit
+</span><span> 11 # r, reword = use commit, but edit the commit message
+</span><span> 12 # e, edit = use commit, but stop for amending
+</span><span> 13 # s, squash = use commit, but meld into previous commit
+</span><span> 14 # f, fixup = like &quot;squash&quot;, but discard this commit&#39;s log message
+</span><span> 15 # x, exec = run command (the rest of the line) using shell
+</span><span> 16 # d, drop = remove commit
+</span></code></pre>
+<p>我们需要将上述提交合并成一个大提交，并 MR 到发布分支。具体操作是将除第一个pick之外的 pick 修改为 s，</p>
+<p>s 代表squash，有整理，压缩的含义。</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>  1 pick 1204858 fix 123
+</span><span>  2 s 379415c fix 12
+</span><span>  3 s f7e189f 2233444
+</span><span>  4 s ab3aa25 bug 1
+</span><span>  5 s a8f5ee3 new function 1
+</span><span>  6
+</span><span>  7 # Rebase 2c6c58f..a8f5ee3 onto 2c6c58f (5 commands)
+</span><span>  8 #
+</span><span>  9 # Commands:
+</span><span> 10 # p, pick = use commit
+</span><span> 11 # r, reword = use commit, but edit the commit message
+</span><span> 12 # e, edit = use commit, but stop for amending
+</span><span> 13 # s, squash = use commit, but meld into previous commit
+</span><span> 14 # f, fixup = like &quot;squash&quot;, but discard this commit&#39;s log message
+</span><span> 15 # x, exec = run command (the rest of the line) using shell
+</span><span> 16 # d, drop = remove commit
+</span></code></pre>
+<p>之后回到修改 commit 信息的窗口，这时修改提交信息，然后保存退出。</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>  1 # This is a combination of 5 commits.
+</span><span>  2 合并之后的大提交
+</span><span>  3
+</span><span>  4
+</span><span>  5
+</span><span>  6
+</span><span>  7
+</span><span>  8
+</span><span>  9
+</span><span> 10 # Please enter the commit message for your changes. Lines starting
+</span><span> 11 # with &#39;#&#39; will be ignored, and an empty message aborts the commit.
+</span><span> 12 #
+</span><span> 13 # Date:      Wed Oct 25 10:51:28 2017 +0800
+</span><span> 14 #
+</span><span> 15 # interactive rebase in progress; onto 2c6c58f
+</span><span> 16 # Last commands done (5 commands done):
+</span><span> 17 #    squash ab3aa25 bug 1
+</span><span> 18 #    squash a8f5ee3 new function 1
+</span></code></pre>
+<p>最后我们使用 git log 看一下提交记录,由下面的 log 可知，我们的确合并了多次提交，这个时候就可以往发布分支提一个好看的 MR 了。但是有时候，假设上述的5次提交记录已经被提交到增加的远程分支，我们在本地 rebase 后，再 push 到远端就会发生冲突，我们就需要强制 push，在push 是加上测试 -f 便可以实现。</p>
+<pre data-lang="shell" style="background-color:#2b303b;color:#c0c5ce;" class="language-shell "><code class="language-shell" data-lang="shell"><span>commit 40bfba9817ab6748c62e55913a28400b7c07683b (HEAD -&gt; dev)
+</span><span>Author: lux &lt;583282897@qq.com&gt;
+</span><span>Date:   Wed Oct 25 10:51:28 2017 +0800
+</span><span>
+</span><span>    合并之后的大提交
+</span><span>
+</span><span>commit 2c6c58fcc07617f4596b191a38fa6675ccf8ef00 (origin/master, origin/dev, origin/HEAD)
+</span><span>Author: lux &lt;583282897@qq.com&gt;
+</span><span>Date:   Sun Oct 8 17:51:24 2017 +0800
+</span><span>
+</span><span>    edit
+</span><span>
+</span><span>commit 26990fe3ec645d7d49df6b283b7db212394d8838
+</span><span>Author: lux &lt;583282897@qq.com&gt;
+</span><span>Date:   Wed Oct 4 17:35:11 2017 +0800
+</span><span>
+</span><span>    init
+</span><span>
+</span><span>commit 8c96f35366309939b591fa4b87e9d062f22adcf7
+</span></code></pre>
+<p>rebase 能是一把功能强大的双刃剑，有兴趣的话可以对比一下 merge和 rebase 的区别。rebase在一定程度上有助于产生更加清晰的提交，但是要重写提交记录，因此rebase之后只好只强制 push 到自己的远端分支，然后通过 MR合并到发布分支。</p>
+<p>如果在 Idea 里面进行 rebase 操作就非常简单了，在 Version Control中的 Log 中选中你需要合并的最早的那条提交记录，然后右键就有一个Interactively Rebase from Here，然后点击它，会跳出一个菜单，也和上述一样，把第一个之后改成 s，确定，然后重写提交信息，确定就可以完成合并提交。</p>
+<h2 id="jiang-dang-qian-de-mou-xie-ti-jiao-chou-qu-dao-ling-wai-fen-zhi-shang">将当前的某些提交抽取到另外分支上</h2>
+<p>有时候有些提交已经提交到本地了，当后来本地有提交一些和之前提交无关的东西，但是你又想先把之前的提交推送到一个新的远端分支。</p>
+<p>比如有以下本地提交记录：</p>
+<p>1.修复 bug 不够多问题  40bfba9817ab6748c62e55913a28400b7c07683b</p>
+<p>2.修复 饭不好吃问题  1204858cf7c1cab54fc28f196033b21933bfe7a2</p>
+<p>3.修复天气比较冷问题 2c6c58fcc07617f4596b191a38fa6675ccf8ef00</p>
+<p>假如我们只需要上线2的功能，1还没有完全弄好。这时我们从远处发布分支 check out 出一个新分支</p>
+<p>，然后在新分支里面执行 git cherry-pick 1204858cf7c1cab54fc28f196033b21933bfe7a2,这个时候，这个2的提交就被放到新的分支，然后就可以在新分支提 MR 合并到发布分支了。</p>
+<h3 id="shi-yong-git-tong-bu-xu-ni-ji-he-ben-di-dai-ma-xiu-gai">使用 git 同步虚拟机和本地代码修改</h3>
+<p>有时候程序是跑在虚拟机或者服务器里面（一般是本地跑不了太多的东西），那本地的代码修改需要同步到虚拟机。</p>
+<p>现在的解决办法有以下几种</p>
+<p>1.在虚拟机和本地使用 nfs 或者其他网络文件系统来共享文件夹，这个就可以保证两边的同步。这个在很久之前用过，但是总感觉很麻烦。</p>
+<p>2.将本地修改推送到远端，然后虚拟机从远端 fetch，这个虽然也可以用，但是产生了远端提交记录，虽然是自己的分支，总感觉不合理，还要走服务器一趟。</p>
+<p>3.使用 git 的remote 功能，这样就直接往虚拟机推送代码，用起来也简单一些</p>
+<p>大致使用流程如下</p>
+<ol>
+<li>添加本地项目新的跟踪远端：git remote add xnj  username@host: /xxx/xxx，username为虚拟机的用户名，host 为虚拟机 ip，/xxx/xxx为项目在虚拟机内的绝对路径（注L：这样配置在每次推送代码时，都需要输入虚拟机密码，可以在~/.ssh/config 中配置私钥访问，就可以不用输入密码）</li>
+<li>然后 push 代码:git push xnj xxx:yyy ,yyy 为你的分支名。但是在 push 时，如果虚拟机中的 yyy 已被 check out，那么 push 将会被拒绝，解决办法最简单就是先切换到其他，然后在 push，也可以 reset，还木有试过。</li>
+</ol>
+<h2 id="can-kao-wen-dang">参考文档</h2>
+<p>1.<a href="https://git-scm.com/book/zh">Git Book</a></p>
+<p>2.<a href="https://ihower.tw/git/">ihower</a></p>
+<p>3.老大的指导</p>
+
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    
+<footer class="footer text-muted">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 order-last order-lg-first">
+				<ul class="list-inline">
+					
+						<li class="list-inline-item">Powered by <a href="https://www.netlify.com/">Netlify</a>, <a href="https://www.getzola.org/">Zola</a>, and <a href="https://github.com/aaranxu/adidoks">AdiDoks</a></li>
+					
+				</ul>
+			</div>
+			<div class="col-lg-8 order-first order-lg-last text-lg-end">
+				<ul class="list-inline">
+					
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/privacy-policy/">Privacy</a></li>
+						
+							<li class="list-inline-item"><a href="https://xunfeng1980.github.io/docs/contributing/code-of-conduct/">Code of Conduct</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+  
+
+  
+<script type="text/javascript" src="https://xunfeng1980.github.io/js/main.js" defer></script>
+
+  <script type="text/javascript" src="https://xunfeng1980.github.io/plugins/elasticlunr.min.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/search_index.en.js" defer></script>
+  <script type="text/javascript" src="https://xunfeng1980.github.io/js/search.js" defer></script>
+
+  
+</body>
+</html>
